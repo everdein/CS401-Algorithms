@@ -1,4 +1,4 @@
-package unionfind;
+// package unionfind;
 
 public interface UnionFind {
 	

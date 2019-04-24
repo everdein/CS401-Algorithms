@@ -1,5 +1,3 @@
-package sort;
-
 import java.util.Comparator;
 
 public class StudentIDComparator implements Comparator<Student>{

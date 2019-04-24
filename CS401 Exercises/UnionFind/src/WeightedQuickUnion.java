@@ -1,4 +1,4 @@
-package unionfind;
+// package unionfind;
 
 public class WeightedQuickUnion extends QuickUnion{
    

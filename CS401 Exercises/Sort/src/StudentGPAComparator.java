@@ -1,5 +1,3 @@
-package sort;
-
 import java.util.Comparator;
 
 public class StudentGPAComparator implements Comparator<Student>{

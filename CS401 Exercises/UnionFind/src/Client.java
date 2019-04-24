@@ -1,4 +1,4 @@
-package unionfind;
+// package unionfind;
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
@@ -17,7 +17,7 @@ public class Client {
 			uf.union(p, q);
 		}
 
-		StdOut.print(uf.getCount());
+		StdOut.println(uf.getCount());
 	}
 	
 	
