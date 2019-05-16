@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8764391e-e7c4-4ee9-97dd-48f8d5e6ce52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1/.idea/libraries/algs4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/QuickFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/QuickUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/WeightedQuickUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/WeightedQuickUnionWithPathCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/MainFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/MainFrameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 2/src/ShellSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CS401 Assignment 3/CS401 Assignment 3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Search/src/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Search/src/BinarySearchRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Search/src/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Search/src/RedBlackTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Search/src/SequentialSearchST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Search/src/separateChainingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 1/CS401 Algorithms - Assignments.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/bin/Part2Q5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/bin/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/lib/algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/src/Part2Q5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/src/Part2Q5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 2/Part2Q5/src/app/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/bin/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/bin/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/bin/StudentGPAComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/bin/StudentIDComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/bin/StudentTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/lib/algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/StudentGPAComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/StudentGPAComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/StudentIDComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/StudentIDComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/StudentTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Sort/src/StudentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/bin/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/lib/algs4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/QuickFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/QuickUnion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/QuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/QuickUnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/UnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/WeightedQuickUnion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/WeightedQuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/WeightedQuickUnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/dataset1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/largeUF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/mediumUF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/UnionFind/src/socialnetwork.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test/Test.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Part2Q1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#2105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Part2Q2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#2900#0" expanded="true" />
+                <marker date="1558023513322" expanded="true" signature="1952:2882" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Part2Q3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Part2Q4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#3091#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Part2Q5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#1814#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>-1</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Part2Q5.java" />
+        <option value="$PROJECT_DIR$/src/Part2Q4.java" />
+        <option value="$PROJECT_DIR$/src/Part2Q2.java" />
+        <option value="$PROJECT_DIR$/src/Part2Q1.java" />
+        <option value="$PROJECT_DIR$/src/Part2Q3.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="659" />
+    <option name="y" value="23" />
+    <option name="width" value="1261" />
+    <option name="height" value="1177" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CS401 Assignment 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS401 Assignment 1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS401 Assignment 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS401 Assignment 1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS401 Assignment 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Part2Q3">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Part2Q1" />
+      <module name="CS401 Assignment 1" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part2Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part2Q2" />
+      <module name="CS401 Assignment 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part2Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part2Q3" />
+      <module name="CS401 Assignment 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part2Q4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part2Q4" />
+      <module name="CS401 Assignment 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Part2Q2" />
+      <item itemvalue="Application.Part2Q3" />
+      <item itemvalue="Application.Part2Q4" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Part2Q3" />
+        <item itemvalue="Application.Part2Q4" />
+        <item itemvalue="Application.Part2Q2" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8764391e-e7c4-4ee9-97dd-48f8d5e6ce52" name="Default Changelist" comment="" />
+      <created>1557891311895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557891311895</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="659" y="23" width="1261" height="1177" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19934373" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299539" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3299539" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Desktop/CS401 Assignment 1/Part 2/Part2Q1.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CS401 Assignment 1/Part 2/Part2Q5/src/Part2Q5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="17" lean-forward="true" selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#1832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CS401 Assignment 1/Part 2/Part2Q4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-end-line="84" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CS401 Assignment 1/Part 2/Part2Q3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-end-line="95" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#3547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CS401 Assignment 1/Part 2/Part2Q2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="true" selection-end-line="73" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/CS401 Assignment 1/Part 2/Part2Q1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#1582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BinarySearchTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/Part2Q4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#3091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Part2Q5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#1814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Part2Q3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Part2Q2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2900#0" expanded="true" />
+            <marker date="1558023513322" expanded="true" signature="1952:2882" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Part2Q1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#2105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>algs4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
