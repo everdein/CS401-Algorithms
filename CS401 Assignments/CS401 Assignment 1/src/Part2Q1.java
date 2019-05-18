@@ -6,7 +6,7 @@
 // integer a are the zeroes following the last 1 in a's binary representation (ex: 0100 ->2; 0101 ->0).
 // Using big-O notation in terms of its parameter n and provide the time complexity of your algorithm.
 
-// Algorithm Analysis: O(n^2) Worst Case
+// Algorithm Analysis: O(nlogn) Worst Case
 
 // Create class
 public class Part2Q1

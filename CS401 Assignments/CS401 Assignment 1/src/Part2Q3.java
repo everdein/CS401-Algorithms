@@ -8,8 +8,10 @@
 
 // Algorithm Analysis: O(2log(n)) Worst Case
 
+// Create class.
 public class Part2Q3
 {
+    // Main method.
     public static void main(String[] args)
     {
         // Test Case 1: Meets Requirements
@@ -33,9 +35,13 @@ public class Part2Q3
         // Test Case 7: Meets Requirements
 //        int[] array ={9,7,5,4,3,1,2,4,6,8,10}; // 1
 
+        // Declares local minimum integer and calls findLocalMinimum method.
         int localMinimum = findLocalMinimum(array);
+        // Prints array local minimum.
         System.out.println("The local minimum is " + localMinimum + ".");
     }
+
+    // Finds and returns local minimum of array.
     public static int findLocalMinimum(int[] array)
     {
         // Checks if middle index is local minimum.
@@ -70,6 +76,7 @@ public class Part2Q3
                 }
             }
         }
+        // Returns -1 when if conditions aren't met.
         return -1;
     }
 }

@@ -5,10 +5,12 @@
 // in both arrays, in sorted order. The running time of your program should be proportional to
 // n in the worst case (Exercise 1.4.12)
 
-// Algorithm Analysis: O(n^2) Worst Case
+// Algorithm Analysis: O(n) Worst Case
 
+// Create class.
 public class Part2Q2
 {
+    // Main method.
     public static void main(String[] args)
     {
         // Test Case 1: Meets requirements
@@ -27,54 +29,63 @@ public class Part2Q2
         compare(array1, array2);
     }
 
-    // Compares two arrays and prints matching values.
+    // Compares two arrays and prints matching values with no duplicates.
     public static void compare(int[] array1, int[] array2)
     {
-        // Tracks indices.
+        // Tracks array indices.
         int array1Index = 0;
         int array2Index = 0;
 
-        // Compares all array indices.
+        // Compares array indices while length of arrays haven't been reached.
         while(array1Index != array1.length && array2Index != array2.length)
         {
-            // Compares both array values.
+            // Checks if array 1 index is less than array 2 index.
             if(array1[array1Index] < array2[array2Index])
             {
-                System.out.println("Increase array 1 index.");
+                // Ensures array 1 index doesn't exceed array 1 length.
                 if(array1Index < array1.length)
                 {
+                    // Increment array 1 index.
                     array1Index++;
                 }
             }
-            // Compares both array values.
+            // Checks if array 1 index is greater than array 2 index.
             else if(array1[array1Index] > array2[array2Index])
             {
-                System.out.println("Increase array 2 index.");
+                // Ensures array 2 index doesn't exceed array 2 length.
                 if(array2Index < array2.length)
                 {
+                    // Increment array 2 index.
                     array2Index++;
                 }
             }
-            // Prints value and increments both array indexes.
+            // Prints matching value from array 1 and array 2 indices and increments both array indices.
             else
             {
+                // Prints matching compared indices.
                 System.out.println(array1[array1Index]);
-                System.out.println("Increase array 1 index & array 2 index.");
-                // Ensures array index doesn't exceed array length.
+                // Ensures array 1 index doesn't exceed array 1 length.
                 if(array1Index < array1.length)
                 {
+                    // Increment array 1 index.
                     array1Index++;
+                    // Skips duplicate values within array 1.
                     while(array1Index < array1.length && array1[array1Index - 1] == array1[array1Index])
                     {
+                        // Increment array 1 index.
                         array1Index++;
                     }
                 }
-                // Ensures array index doesn't exceed array length.
+
+                // Ensures array 2 index doesn't exceed array 2 length.
                 if(array2Index < array2.length)
                 {
+                    // Increment array 2 index.
                     array2Index++;
+                    // Skips duplicate values within array 1.
                     while(array2Index < array2.length && array2[array2Index - 1] == array2[array2Index])
                     {
+                        // Increment array 2 index.
                         array2Index++;
                     }
                 }

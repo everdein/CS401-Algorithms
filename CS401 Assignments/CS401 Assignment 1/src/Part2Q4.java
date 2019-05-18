@@ -11,7 +11,7 @@
 
 // Algorithm Analysis: O(n^2) Worst Case
 
-// Declares class.
+// Create class.
 class Part2Q4
 {
     // Main method.
@@ -32,35 +32,36 @@ class Part2Q4
     // Compares indexOf and myIndexOf.
     public static void compareFunction(String string, String substring)
     {
-        // Declares myIndexOf int and passes strings into character array.
-        int myIndexOf = stringContainsSubstring(string.toCharArray(), substring.toCharArray());
-        if(myIndexOf == -1)
+        // Attempts to locate the substring within the string by calling stringContainsSubstring method.
+        int stringContainsSubstring = stringContainsSubstring(string.toCharArray(), substring.toCharArray());
+        if(stringContainsSubstring == -1)
         {
-            System.out.println("The substring was not found within the string.");
+            // Prints the substring is not contained within the string.
+            System.out.println("The substring is not contained within the string.");
         }
         else
         {
+            // Prints the index the substring is found within the string.
             System.out.println("The substring '" + substring + "' was found within string '" + string +
-                    "' at index " + myIndexOf + ".");
+                    "' at index " + stringContainsSubstring + ".");
         }
     }
 
     // Checks if string contains substring and returns the index it is found at, or returns -1 if not found.
     public static int stringContainsSubstring(char[] string, char[] subString)
     {
-        // Declares int for string length.
+        // Stores string length into int variable.
         int stringLength = string.length;
 
-        // Declares int for sub string length.
+        // Stores substring length into int variable.
         int stringSubLength = subString.length;
 
         // Declares count.
         int count = 0;
 
-        // Returns -1 when sub string is longer than string.
+        // Checks if substring is greater than string and return -1.
         if (stringSubLength > stringLength)
         {
-            // Returns -1.
             return -1;
         }
         // Iterates the size of the string minus the sub string.
@@ -81,9 +82,9 @@ class Part2Q4
                         return i;
                     }
                 }
-                // Sets count to 0.
                 else
                 {
+                    // Sets count to 0 and breaks.
                     count = 0;
                     break;
                 }
