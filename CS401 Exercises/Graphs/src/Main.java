@@ -29,8 +29,8 @@ public class Main
         // Graph
         In in = new In("data.txt");
         int vertices = in.readInt();
-        int edges = in.readInt();
         Graph graph = new Graph(vertices);
+        int edges = in.readInt();
         for(int i = 0; i < edges;i++)
         {
             int v = in.readInt();
@@ -40,5 +40,15 @@ public class Main
 
         // Prints graph.
         System.out.println(graph);
+
+        DepthFirstSearch dfs = new DepthFirstSearch(graph, 0);
+        System.out.println(dfs.hasPath(6));
+
+//        for(int x: dfs.pathTo(6))
+//        {
+//            System.out.println(x);
+//        }
+        System.out.println(dfs.pathTo(6));
+
     }
 }

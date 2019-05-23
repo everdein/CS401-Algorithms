@@ -1,9 +1,9 @@
 public class Movie
 {
-    int id;
+    String id;
     String color;
     String movie_title;
-    int duration;
+    String duration;
     String director_name;
     String actor_1_name;
     String actor_2_name;
@@ -12,121 +12,98 @@ public class Movie
     String language;
     String country;
     String content_rating;
-    int title_year;
-    double imdb_score;
+    String title_year;
+    String imdb_score;
 
-    public int getId()
-    {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id)
-    {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getColor()
-    {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(String color)
-    {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public String getMovie_title()
-    {
+    public String getMovie_title() {
         return movie_title;
     }
 
-    public void setMovie_title(String movie_title)
-    {
+    public void setMovie_title(String movie_title) {
         this.movie_title = movie_title;
     }
 
-    public int getDuration()
-    {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration)
-    {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
-    public String getDirector_name()
-    {
+    public String getDirector_name() {
         return director_name;
     }
 
-    public void setDirector_name(String director_name)
-    {
+    public void setDirector_name(String director_name) {
         this.director_name = director_name;
     }
 
-    public String getActor_1_name()
-    {
+    public String getActor_1_name() {
         return actor_1_name;
     }
 
-    public void setActor_1_name(String actor_1_name)
-    {
+    public void setActor_1_name(String actor_1_name) {
         this.actor_1_name = actor_1_name;
     }
 
-    public String getActor_2_name()
-    {
+    public String getActor_2_name() {
         return actor_2_name;
     }
 
-    public void setActor_2_name(String actor_2_name)
-    {
+    public void setActor_2_name(String actor_2_name) {
         this.actor_2_name = actor_2_name;
     }
 
-    public String getActor_3_name()
-    {
+    public String getActor_3_name() {
         return actor_3_name;
     }
 
-    public void setActor_3_name(String actor_3_name)
-    {
+    public void setActor_3_name(String actor_3_name) {
         this.actor_3_name = actor_3_name;
     }
 
-    public String getMovie_imdb_link()
-    {
+    public String getMovie_imdb_link() {
         return movie_imdb_link;
     }
 
-    public void setMovie_imdb_link(String movie_imdb_link)
-    {
+    public void setMovie_imdb_link(String movie_imdb_link) {
         this.movie_imdb_link = movie_imdb_link;
     }
 
-    public String getLanguage()
-    {
-        return movie_imdb_link;
+    public String getLanguage() {
+        return language;
     }
 
-    public void setLanguage(String language)
-    {
+    public void setLanguage(String language) {
         this.language = language;
     }
 
-    public String getCountry()
-    {
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country)
-    {
+    public void setCountry(String country) {
         this.country = country;
     }
 
-    public String getContent_rating()
-    {
+    public String getContent_rating() {
         return content_rating;
     }
 
@@ -134,19 +111,19 @@ public class Movie
         this.content_rating = content_rating;
     }
 
-    public int getTitle_year() {
+    public String getTitle_year() {
         return title_year;
     }
 
-    public void setTitle_year(int title_year) {
+    public void setTitle_year(String title_year) {
         this.title_year = title_year;
     }
 
-    public double getImdb_score() {
+    public String getImdb_score() {
         return imdb_score;
     }
 
-    public void setImdb_score(double imdb_score) {
+    public void setImdb_score(String imdb_score) {
         this.imdb_score = imdb_score;
     }
 }

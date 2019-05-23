@@ -7,30 +7,45 @@ public class Main {
     {
         System.out.println("Hello World!");
 //        BinarySearchTree<String, Integer> bst = new BinarySearchTree<String, Integer>();
+
+
+        RedBlackTree<String, Integer> rbt = new RedBlackTree<>();
+        rbt.put("S", 1);
+        rbt.put("E", 5);
+        rbt.put("A", 7);
+        rbt.put("R", 10);
+        rbt.put("C", 8);
+        rbt.put("H", 5);
+
+        for(String key: rbt.keys())
+        {
+            System.out.println("key" + ":" + rbt.get(key)) ;
+        }
+
     }
 
-    // Recursive binary search algorithm.
-    public static int binarySearch(Comparable[] a, Comparable key, int left, int right)
-    {
-        if(left <= right)
-        {
-            int midPoint = (left + right) / 2;
-            int compare = key.compareTo(a[midPoint]);
-            if(compare == 0)
-            {
-                return midPoint;
-            }
-            else if(compare < 0)
-            {
-                binarySearch(a, key, left, midPoint - 1);
-            }
-            else
-            {
-                binarySearch(a, key, midPoint + 1, right);
-            }
-        }
-        return -1;
-    }
+//    // Recursive binary search algorithm.
+//    public static int binarySearch(Comparable[] a, Comparable key, int left, int right)
+//    {
+//        if(left <= right)
+//        {
+//            int midPoint = (left + right) / 2;
+//            int compare = key.compareTo(a[midPoint]);
+//            if(compare == 0)
+//            {
+//                return midPoint;
+//            }
+//            else if(compare < 0)
+//            {
+//                binarySearch(a, key, left, midPoint - 1);
+//            }
+//            else
+//            {
+//                binarySearch(a, key, midPoint + 1, right);
+//            }
+//        }
+//        return -1;
+//    }
 
 //    // Non recursive binary search algorithm.
 //    public static int binarySearch(Comparable[] a, Comparable key, int left, int right)
