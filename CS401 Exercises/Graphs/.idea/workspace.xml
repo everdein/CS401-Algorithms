@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9229bdd-ec1c-4f0d-9f35-377bfe767f21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BreadthFirstSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Movie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/src/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/src/MovieDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/src/MovieDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 1 Part 2/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Search/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Search/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search/out/production/Search/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Search/out/production/Search/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search/out/production/Search/RedBlackTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Search/out/production/Search/RedBlackTree$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search/out/production/Search/RedBlackTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Search/out/production/Search/RedBlackTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Search/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search/src/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Search/src/RedBlackTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/QuickFind.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="645">
+              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/data.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -61,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="465">
               <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,16 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DepthFirstSearch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#624#633#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BreadthFirstSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#765#774#0" expanded="true" />
+                <element signature="e#601#610#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +114,9 @@
         <option value="$PROJECT_DIR$/src/GraphMatrix.java" />
         <option value="$PROJECT_DIR$/data.txt" />
         <option value="$PROJECT_DIR$/src/Graph.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/DepthFirstSearch.java" />
+        <option value="$PROJECT_DIR$/src/BreadthFirstSearch.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -145,7 +156,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -207,20 +223,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558373783146</updated>
+      <workItem from="1558717189542" duration="1678000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10436635" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10543131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299539" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299539" />
@@ -232,6 +254,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3299539" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -241,6 +264,9 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
@@ -255,23 +281,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data.txt" />
     <entry file="file://$PROJECT_DIR$/data.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -282,22 +296,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/GraphMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="465">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DepthFirstSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#624#633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BreadthFirstSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#765#774#0" expanded="true" />
+            <element signature="e#601#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,5 @@
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
 
 public class Main
 {
@@ -39,16 +40,26 @@ public class Main
         }
 
         // Prints graph.
+        System.out.println("Graph:");
         System.out.println(graph);
 
         DepthFirstSearch dfs = new DepthFirstSearch(graph, 0);
+        System.out.println("Depth First Search:");
         System.out.println(dfs.hasPath(6));
 
 //        for(int x: dfs.pathTo(6))
 //        {
 //            System.out.println(x);
 //        }
-        System.out.println(dfs.pathTo(6));
+        System.out.println(dfs.pathTo(6) + "\n");
+
+        BreadthFirstSearch bfs = new BreadthFirstSearch(graph, 0);
+        if(bfs.hasPath(6))
+        {
+            System.out.println("Breadth First Search:");
+            System.out.println(bfs.pathTo(6));
+        }
+        System.out.println(bfs.distTo(6) + "\n");
 
     }
 }

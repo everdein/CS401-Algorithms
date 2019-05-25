@@ -4,15 +4,16 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Main
+public class Main<T extends Comparable<T>>
 {
-    public static MovieDatabase MDB;
+    // Declares movie database object.
+    public static MovieDatabase MDB;;
+
+    // Creates map to store red black trees.
+    private static Map<String, RedBlackBST<String, HashSet<Integer>>> movieFieldsRBTMap = new HashMap<>();
 
     public static void main(String[] args)
     {
-        // Creates map to store red black trees.
-        Map<String, RedBlackBST<String, Set<Integer>>> movieFieldsRBTMap = new HashMap<>();
-
         // Gets file size to set array size.
         int fileSize = getFileSize();
 
@@ -23,6 +24,23 @@ public class Main
         loadArray(movieDatabase);
         addFieldToRBT(movieDatabase, movieFieldsRBTMap);
         printArray(movieDatabase);
+
+        // To-Do
+        // Setup Queries
+        Query query = new EqualTo("year", "2012");
+        HashSet<Integer> result = query.execute(movieFieldsRBTMap);
+        if (result != null
+        ) {
+
+            System.out.println(result);
+        }
+        Iterator<Integer> idIterator = result.iterator();
+        while(idIterator.hasNext())
+        {
+            int id = idIterator.next();
+            print(id,movieDatabase);
+        }
+
     }
 
     // Counts each line in the file and returns file size for movie data base array size.
@@ -136,9 +154,12 @@ public class Main
                     x.getTitle_year() + " " + x.getImdb_score());
         }
     }
-
+    private static void print(int id, Movie[] movie)
+    {
+        System.out.println(movie[id]);
+    }
     // Adds field to red black tree.
-    public static void addFieldToRBT(Movie[] movieDatabase, Map<String, RedBlackBST<String, Set<Integer>>> movieFieldsRBTMap)
+    public static void addFieldToRBT(Movie[] movieDatabase, Map<String, RedBlackBST<String, HashSet<Integer>>> movieFieldsRBTMap)
     {
         MDB.addFieldIndex(movieDatabase, "color", movieFieldsRBTMap);
         MDB.addFieldIndex(movieDatabase, "movie_title", movieFieldsRBTMap);
