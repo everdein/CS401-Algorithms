@@ -1,421 +1,369 @@
 import edu.princeton.cs.algs4.RedBlackBST;
+
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class MovieDatabase
+
+
+public class MovieDatabase <T extends Comparable<T>>
 {
-    public static void addFieldIndex(Movie[] database, String field, Map<String, RedBlackBST<String, HashSet<Integer>>> movieFieldsRBTMap)
+    // Creates map to store red black tree fields.
+    public Map<T, RedBlackBST<T, HashSet<Integer>>> movieFieldsRBTMap = new HashMap<>();
+
+    // Adds field to red black tree.
+    public void addFieldToRBT(Movie[] movieDatabase)
+    {
+        addFieldIndex(movieDatabase, (T) "color");
+        addFieldIndex(movieDatabase, (T) "movie_title");
+        addFieldIndex(movieDatabase, (T) "duration");
+        addFieldIndex(movieDatabase, (T) "director_name");
+        addFieldIndex(movieDatabase, (T) "actor_1_name");
+        addFieldIndex(movieDatabase, (T) "actor_2_name");
+        addFieldIndex(movieDatabase, (T) "actor_3_name");
+        addFieldIndex(movieDatabase, (T) "movie_imdb_link");
+        addFieldIndex(movieDatabase, (T) "language");
+        addFieldIndex(movieDatabase, (T) "country");
+        addFieldIndex(movieDatabase, (T) "content_rating");
+        addFieldIndex(movieDatabase, (T) "title_year");
+        addFieldIndex(movieDatabase, (T) "imdb_score");
+    }
+
+    public void addFieldIndex(Movie[] database, T field)
     {
         // Creates Red Black Tree
-        RedBlackBST<String, HashSet<Integer>> movieFieldRBT = new RedBlackBST<>();
+        RedBlackBST<T, HashSet<Integer>> movieFieldRBT = new RedBlackBST<>();
+
         // Switch case by movie field and calls store more field RBT.
-        switch(field)
-        {
-            case "color":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getColor()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getColor());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getColor(), set);
+        if ("color".equals(field)) {
+            // Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getColor())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getColor());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getColor(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getColor(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getColor(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "movie_title":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getMovie_title()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getMovie_title());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getMovie_title(), set);
+            }
+        } else if ("movie_title".equals(field)) {
+            // Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getMovie_title())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getMovie_title());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getMovie_title(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getMovie_title(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getMovie_title(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "duration":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getDuration()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getDuration());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getDuration(), set);
+            }
+        } else if ("duration".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getDuration())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getDuration());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getDuration(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getDuration(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getDuration(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "director_name":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getDirector_name()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getDirector_name());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getDirector_name(), set);
+            }
+        } else if ("director_name".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getDirector_name())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getDirector_name());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getDirector_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getDirector_name(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getDirector_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "actor_1_name":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getActor_1_name()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getActor_1_name());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getActor_1_name(), set);
+            }
+        } else if ("actor_1_name".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getActor_1_name())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getActor_1_name());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getActor_1_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getActor_1_name(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getActor_1_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "actor_2_name":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getActor_2_name()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getActor_2_name());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getActor_2_name(), set);
+            }
+        } else if ("actor_2_name".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getActor_2_name())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getActor_2_name());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getActor_2_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getActor_2_name(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getActor_2_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "actor_3_name":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getActor_3_name()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getActor_3_name());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getActor_3_name(), set);
+            }
+        } else if ("actor_3_name".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getActor_3_name())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getActor_3_name());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getActor_3_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getActor_3_name(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getActor_3_name(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "movie_imdb_link":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getMovie_imdb_link()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getMovie_imdb_link());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getMovie_imdb_link(), set);
+            }
+        } else if ("movie_imdb_link".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getMovie_imdb_link())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getMovie_imdb_link());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getMovie_imdb_link(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getMovie_imdb_link(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getMovie_imdb_link(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "language":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getLanguage()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getLanguage());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getLanguage(), set);
+            }
+        } else if ("language".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getLanguage())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getLanguage());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getLanguage(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getLanguage(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getLanguage(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "country":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getCountry()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getCountry());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getCountry(), set);
+            }
+        } else if ("country".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getCountry())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getCountry());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getCountry(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getCountry(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getCountry(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "content_rating":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getContent_rating()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getContent_rating());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getContent_rating(), set);
+            }
+        } else if ("content_rating".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getContent_rating())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getContent_rating());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getContent_rating(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getContent_rating(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getContent_rating(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "title_year":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getTitle_year()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getTitle_year());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getTitle_year(), set);
+            }
+        } else if ("title_year".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getTitle_year())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getTitle_year());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getTitle_year(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getTitle_year(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getTitle_year(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            case "imdb_score":
-                // Populates the red black true with movie title and id as key value pairs.
-                for(int i = 0; i < database.length; i++)
-                {
-                    // If movie title is already stored in the rbt, append duplicate
-                    // movie title id to existing movie title hash set.
-                    if (movieFieldRBT.contains(database[i].getImdb_score()))
-                    {
-                        HashSet<Integer> set = movieFieldRBT.get(database[i].getImdb_score());
-                        set.add(Integer.parseInt(database[i].getId()));
-                        movieFieldRBT.put(database[i].getImdb_score(), set);
+            }
+        } else if ("imdb_score".equals(field)) {// Populates the red black true with movie title and id as key value pairs.
+            for (int i = 0; i < database.length; i++) {
+                // If movie title is already stored in the rbt, append duplicate
+                // movie title id to existing movie title hash set.
+                if (movieFieldRBT.contains((T) database[i].getImdb_score())) {
+                    HashSet<Integer> set = movieFieldRBT.get((T) database[i].getImdb_score());
+                    set.add((Integer) database[i].getId());
+                    movieFieldRBT.put((T) database[i].getImdb_score(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
-                    else
-                    {
-                        // Creates hash set.
-                        HashSet<Integer> set = new HashSet<>();
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
+                } else {
+                    // Creates hash set.
+                    HashSet<Integer> set = new HashSet<>();
 
-                        // Converts String ID to integer and adds to hash set.
-                        set.add(Integer.parseInt(database[i].getId()));
+                    // Converts String ID to integer and adds to hash set.
+                    set.add((Integer) database[i].getId());
 
-                        // Puts movie title and hash set movie id into red black tree.
-                        movieFieldRBT.put(database[i].getImdb_score(), set);
+                    // Puts movie title and hash set movie id into red black tree.
+                    movieFieldRBT.put((T) database[i].getImdb_score(), set);
 
-                        // Puts red black tree into index tree map.
-                        movieFieldsRBTMap.put(field, movieFieldRBT);
-                    }
+                    // Puts red black tree into index tree map.
+                    movieFieldsRBTMap.put((T) field, movieFieldRBT);
                 }
-                break;
-            default:
-                System.out.println("Field not found.");
+            }
+        } else {
+            System.out.println("Field not found.");
         }
     }
 }

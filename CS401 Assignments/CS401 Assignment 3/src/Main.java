@@ -1,50 +1,74 @@
-import edu.princeton.cs.algs4.RedBlackBST;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Main<T extends Comparable<T>>
+public class Main  <T extends Comparable<T>>
 {
-    // Declares movie database object.
-    public static MovieDatabase MDB;;
 
-    // Creates map to store red black trees.
-    private static Map<String, RedBlackBST<String, HashSet<Integer>>> movieFieldsRBTMap = new HashMap<>();
+
+    public static MovieDatabase MDB;
 
     public static void main(String[] args)
     {
+        Main MovieDB = new Main();
         // Gets file size to set array size.
         int fileSize = getFileSize();
 
         // Creates movie database array to store movie object.
         Movie[] movieDatabase = new Movie[fileSize];
 
+        // Creates map to store red black trees.
+//        Map<String, RedBlackBST<T, HashSet<Integer>>> movieFieldsRBTMap = new HashMap<>();
+
         // Calls methods.
         loadArray(movieDatabase);
-        addFieldToRBT(movieDatabase, movieFieldsRBTMap);
         printArray(movieDatabase);
+        MDB.addFieldToRBT(movieDatabase);
+//        MovieDatabase.add
 
         // To-Do
         // Setup Queries
-        Query query = new EqualTo("year", "2012");
-        HashSet<Integer> result = query.execute(movieFieldsRBTMap);
-        if (result != null
-        ) {
 
-            System.out.println(result);
-        }
+        // Equal to query.
+        Query query = (Query) new EqualTo("color", "Color");
+
+//        Query query = (Query) new EqualTo("color", "Color");
+
+        // Less than query.
+//        Query query = new LessThan("title_year", "2012");
+
+        // Greater than query.
+//        Query query = new GreaterThan("title_year", "2012");
+
+        // Or query.
+//        Query query = new Or(new EqualTo("color", " Black and White"), new EqualTo("title_year", "2012"));
+
+        // And query.
+//        Query query = new And(new EqualTo("color", " Black and White"), new EqualTo("title_year", "2012"));
+
+
+        // Not query.
+//        Query query = new Not(new EqualTo("color", "Color"));
+
+        // Query Execute.
+        HashSet<Integer> result = query.execute(MDB.movieFieldsRBTMap);
+
+//        if (result != null)
+//        {
+//            System.out.println("Red Black Tree Index Results:");
+//            System.out.println(result + "\n");
+//        }
         Iterator<Integer> idIterator = result.iterator();
         while(idIterator.hasNext())
         {
             int id = idIterator.next();
-            print(id,movieDatabase);
+            print(movieDatabase, id);
         }
 
     }
 
     // Counts each line in the file and returns file size for movie data base array size.
-    private static int getFileSize()
+    public static int getFileSize()
     {
         int fileSize = 0;
         try
@@ -77,7 +101,7 @@ public class Main<T extends Comparable<T>>
     }
 
     // Loads movie objects into movie database array.
-    private static void loadArray(Movie[] movieDatabase)
+    public static void loadArray(Movie[] movieDatabase)
     {
         try
         {
@@ -93,7 +117,8 @@ public class Main<T extends Comparable<T>>
                 int movieIndex = 0;
 
                 // Scans every line in the file.
-                while (scanner.hasNextLine()) {
+                while (scanner.hasNextLine())
+                {
                     // Creates movie object.
                     Movie movie = new Movie();
 
@@ -107,10 +132,24 @@ public class Main<T extends Comparable<T>>
                     int count = 0;
 
                     // Sets file data into movie categories.
-                    movie.setId(categories[count++]);
+                    movie.setId(Integer.parseInt(categories[count++]));
                     movie.setColor(categories[count++]);
                     movie.setMovie_title(categories[count++]);
-                    movie.setDuration(categories[count++]);
+
+                    //                                 //
+                    //// Duration string to integer. ////
+                    //                                 //
+                    String duration = categories[count++];
+                    if(duration.isEmpty())
+                    {
+                        duration = "-1";
+                        movie.setDuration(Integer.parseInt(duration));
+                    }
+                    else
+                    {
+                        movie.setDuration(Integer.parseInt(duration));
+                    }
+
                     movie.setDirector_name(categories[count++]);
                     movie.setActor_1_name(categories[count++]);
                     movie.setActor_2_name(categories[count++]);
@@ -119,8 +158,34 @@ public class Main<T extends Comparable<T>>
                     movie.setLanguage(categories[count++]);
                     movie.setCountry(categories[count++]);
                     movie.setContent_rating(categories[count++]);
-                    movie.setTitle_year(categories[count++]);
-                    movie.setImdb_score(categories[count++]);
+
+                    //                                   //
+                    //// Title year string to integer. ////
+                    //                                   //
+                    String title_year = categories[count++];
+                    if(title_year.isEmpty())
+                    {
+                        title_year = "-1";
+                        movie.setTitle_year(Integer.parseInt(title_year));
+                    }
+                    else
+                    {
+                        movie.setTitle_year(Integer.parseInt(title_year));
+                    }
+
+                    //                                  //
+                    //// IMDB score string to double. ////
+                    //                                  //
+                    String imdb_score = categories[count++];
+                    if(imdb_score.isEmpty())
+                    {
+                        imdb_score = "-1";
+                        movie.setImdb_score(Double.parseDouble(imdb_score));
+                    }
+                    else
+                    {
+                        movie.setImdb_score(Double.parseDouble(imdb_score));
+                    }
 
                     // Stores movie object into movie database.
                     movieDatabase[movieIndex] = movie;
@@ -143,7 +208,7 @@ public class Main<T extends Comparable<T>>
     }
 
     // Prints array of movie objects.
-    private static void printArray(Movie[] movieDatabase)
+    public static void printArray(Movie[] movieDatabase)
     {
         for (Movie x : movieDatabase)
         {
@@ -154,25 +219,15 @@ public class Main<T extends Comparable<T>>
                     x.getTitle_year() + " " + x.getImdb_score());
         }
     }
-    private static void print(int id, Movie[] movie)
+
+    // Prints returned hash set.
+    public static void print(Movie[] movieDatabase, int id)
     {
-        System.out.println(movie[id]);
-    }
-    // Adds field to red black tree.
-    public static void addFieldToRBT(Movie[] movieDatabase, Map<String, RedBlackBST<String, HashSet<Integer>>> movieFieldsRBTMap)
-    {
-        MDB.addFieldIndex(movieDatabase, "color", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "movie_title", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "duration", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "director_name", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "actor_1_name", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "actor_2_name", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "actor_3_name", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "movie_imdb_link", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "language", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "country", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "content_rating", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "title_year", movieFieldsRBTMap);
-        MDB.addFieldIndex(movieDatabase, "imdb_score", movieFieldsRBTMap);
+        id = id - 1;
+        System.out.println(movieDatabase[id].getId() + " " + movieDatabase[id].getColor() + " " + movieDatabase[id].getMovie_title() + " " +
+                movieDatabase[id].getDuration() + " " + movieDatabase[id].getDirector_name() + " " + movieDatabase[id].getActor_1_name() + " " +
+                movieDatabase[id].getActor_2_name() + " " + movieDatabase[id].getActor_3_name() + " " + movieDatabase[id].getMovie_imdb_link() + " " +
+                movieDatabase[id].getLanguage() + " " + movieDatabase[id].getCountry() + " " + movieDatabase[id].getContent_rating() + " " +
+                movieDatabase[id].getTitle_year() + " " + movieDatabase[id].getImdb_score());
     }
 }
