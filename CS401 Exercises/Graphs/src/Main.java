@@ -1,65 +1,120 @@
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
 
-public class Main
-{
+public class Main {
     public static void main(String[] args)
     {
+        graph();
+        graphMatrix();
+        depthFirstSearch();
+        breadthFirstSearch();
+        directedGraphAndCycle();
+    }
 
-//        GraphMatrix graph = new GraphMatrix(4);
-//        graph.addEdge(0, 1);
-//        graph.addEdge(0, 2);
-//        graph.addEdge(1, 3);
-//        for(int w: graph.adj(1))
-//        {
-//            System.out.println(w);
-//        }
-
-        // GraphMatrix
-//        In in = new In("data.txt");
-//        int vertices = in.readInt();
-//        int edges = in.readInt();
-//        GraphMatrix graph = new GraphMatrix(vertices);
-//        for(int i = 0; i < edges; i++)
-//        {
-//            int v = in.readInt();
-//            int w = in.readInt();
-//            graph.addEdge(v, w);
-//        }
-
-        // Graph
+    //                     //
+    //// Reads Text File ////
+    //                     //
+    public static Graph readTxt()
+    {
         In in = new In("data.txt");
         int vertices = in.readInt();
-        Graph graph = new Graph(vertices);
         int edges = in.readInt();
-        for(int i = 0; i < edges;i++)
+        Graph graph = new Graph(vertices, edges);
+        for(int i = 0; i < edges; i++)
         {
             int v = in.readInt();
             int w = in.readInt();
             graph.addEdge(v, w);
         }
+        return graph;
+    }
 
-        // Prints graph.
-        System.out.println("Graph:");
-        System.out.println(graph);
+    //           //
+    //// Graph ////
+    //           //
+    public static void graph()
+    {
+        Graph g = readTxt();
+        System.out.println("Graph:\n" + g);
+        System.out.println("Vertices: " + g.v());
+        System.out.println("Edges: " + g.e());
+        System.out.println("Degree: " + g.degree(2));
+        System.out.println("Adjacent: " + g.adj(2) + "\n");
+    }
 
-        DepthFirstSearch dfs = new DepthFirstSearch(graph, 0);
-        System.out.println("Depth First Search:");
-        System.out.println(dfs.hasPath(6));
+    //                  //
+    //// Graph Matrix ////
+    //                  //
+    public static void graphMatrix()
+    {
+        Graph g = readTxt();
+        System.out.println("Graph:\n" + g);
 
-//        for(int x: dfs.pathTo(6))
-//        {
-//            System.out.println(x);
-//        }
-        System.out.println(dfs.pathTo(6) + "\n");
-
-        BreadthFirstSearch bfs = new BreadthFirstSearch(graph, 0);
-        if(bfs.hasPath(6))
+        System.out.print("Ajacent: " );
+        for(int w: g.adj(2))
         {
-            System.out.println("Breadth First Search:");
-            System.out.println(bfs.pathTo(6));
+            System.out.print(w + " ");
         }
-        System.out.println(bfs.distTo(6) + "\n");
+        System.out.println("\n");
+    }
 
+    //                        //
+    //// Depth First Search ////
+    //                        //
+    public static void depthFirstSearch()
+    {
+        Graph g = readTxt();
+        int startingVertex = 0;
+        int endingVertex = 6;
+        DepthFirstSearch bfs = new DepthFirstSearch(g, startingVertex);
+        if(bfs.hasPath(endingVertex))
+        {
+            System.out.println("Depth First Search");
+            System.out.println("Starting Vertex: " + startingVertex);
+            System.out.println("Ending Vertex: " + endingVertex);
+            System.out.println("Path To: "  + bfs.pathTo(endingVertex));
+        }
+        System.out.println("Path Distance: " + bfs.distTo(endingVertex) + "\n");
+    }
+
+    //                          //
+    //// Breadth First Search ////
+    //                          //
+    public static void breadthFirstSearch()
+    {
+        Graph g = readTxt();
+        System.out.println("Graph:");
+        System.out.println(g);
+        int startingVertex = 0;
+        int endingVertex = 6;
+        BreadthFirstSearch bfs = new BreadthFirstSearch(g, startingVertex);
+        if(bfs.hasPath(endingVertex))
+        {
+            System.out.println("Breadth First Search");
+            System.out.println("Starting Vertex: " + startingVertex);
+            System.out.println("Ending Vertex: " + endingVertex);
+            System.out.println("Path To: "  + bfs.pathTo(endingVertex));
+        }
+        System.out.println("Path Distance: " + bfs.distTo(endingVertex) + "\n");
+    }
+
+
+    //                            //
+    //// Directed Graph & Cycle ////
+    //                            //
+    public static void directedGraphAndCycle()
+    {
+        In in = new In("data.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+        DirectedGraph digraph = new DirectedGraph(vertices);
+        for (int i = 0; i < edges; i++) {
+            int v = in.readInt();
+            int w = in.readInt();
+            digraph.addEdge(v, w);
+        }
+        System.out.println(digraph);
+        DirectedCycle dc = new DirectedCycle(digraph);
+        if(dc.hasCycle())
+            System.out.println("Cycle:"+ dc.cycle());
     }
 }

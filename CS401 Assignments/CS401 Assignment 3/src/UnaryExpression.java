@@ -1,13 +1,13 @@
-//public abstract class UnaryExpression <T extends Comparable<T>> implements Query
-//{
-//
-//    String mapKey;
-//    String rbtKey;
-//
-//    public UnaryExpression(String mapKey, String rbtKey)
-//    {
-//        this.mapKey = mapKey;
-//        this.rbtKey = rbtKey;
-//    }
-//
-//}
+public abstract class UnaryExpression <T extends Comparable<T>> implements Query
+{
+
+    protected String mapKey;
+    protected T rbtKey;
+
+    public UnaryExpression(String mapKey, T rbtKey)
+    {
+        this.mapKey = mapKey;
+        this.rbtKey = rbtKey;
+    }
+
+}

@@ -6,11 +6,12 @@ public class BreadthFirstSearch
     private boolean[] marked;
     private int[] edgeTo;
     private int[] distTo;
-    private int s;
+    private int start;
+    private Graph graph;
 
-    public BreadthFirstSearch(Graph graph, int s)
+    public BreadthFirstSearch(Graph graph, int start)
     {
-        this.s = s;
+        this.start = start;
         int vCount = graph.v();
         marked = new boolean[vCount];
         edgeTo = new int[vCount];
@@ -20,7 +21,7 @@ public class BreadthFirstSearch
         {
             distTo[i] = Integer.MAX_VALUE;
         }
-        bfs(graph, s);
+        bfs(graph, start);
     }
 
     public boolean hasPath(int v)
@@ -40,11 +41,11 @@ public class BreadthFirstSearch
             return null;
         }
         Stack<Integer> path = new Stack<Integer>();
-        for(int x = v; x != s; x = edgeTo[x])
+        for(int x = v; x != start; x = edgeTo[x])
         {
             path.push(x);
         }
-        path.push(s);
+        path.push(start);
         return path;
     }
 

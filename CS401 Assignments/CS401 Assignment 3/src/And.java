@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Map;
 
-public abstract class And <T extends Comparable<T>> implements Query
+public class And <T extends Comparable<T>> implements Query
 {
     private ArrayList<Query> queries;
 
-    public And(Query... queries)
+    public And(Equal year, Equal imdb_score, Query... queries)
     {
         this.queries = new ArrayList<>();
         for(Query query : queries)

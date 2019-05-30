@@ -4,61 +4,61 @@ import java.util.List;
 public class GraphMatrix
 {
 
-    private int v; // vertices
-    private int e; // edges
+    private int vertices; // vertices
+    private int edges; // edges
     private boolean[][] adj;
 
-    public GraphMatrix(int v)
+    public GraphMatrix(int vertices, int edges)
     {
-        this.v = v;
-        this.e = 0;
-        adj = new boolean[v][v];
+        this.vertices = vertices;
+        this.edges = edges;
+        adj = new boolean[vertices][vertices];
     }
 
     // two vertices passed as parameters
-    public void addEdge(int v, int w)
+    public void addEdge(int vertices, int w)
     {
-        if(!adj[v][w])
+        if(!adj[vertices][w])
         {
-            e++;
+            edges++;
         }
-        adj[v][w] = true;
-        adj[w][v] = true;
+        adj[vertices][w] = true;
+        adj[w][vertices] = true;
     }
 
-    public void removeEdge(int v, int w)
+    public void removeEdge(int vertices, int w)
     {
-        if(!adj[v][w])
+        if(!adj[vertices][w])
         {
-            e--;
+            edges--;
         }
-        adj[v][w] = false;
-        adj[w][v] = false;
+        adj[vertices][w] = false;
+        adj[w][vertices] = false;
     }
 
-    public boolean hasEdge(int v, int w)
+    public boolean hasEdge(int vertices, int w)
     {
-        return adj[v][w];
+        return adj[vertices][w];
     }
 
     // return # of vertices
     public int v()
     {
-        return v;
+        return vertices;
     }
 
     // return # of edges
     public int e()
     {
-        return e;
+        return edges;
     }
 
-    public Iterable<Integer> adj(int s)
+    public Iterable<Integer> adj(int start)
     {
         List<Integer> adjList = new ArrayList<Integer>();
-        for(int i = 0; i < v; i++)
+        for(int i = 0; i < vertices; i++)
         {
-            if(adj[s][i])
+            if(adj[start][i])
             {
                 adjList.add(i);
             }
@@ -66,10 +66,10 @@ public class GraphMatrix
         return adjList;
     }
 
-    public int degree(int s)
+    public int degree(int start)
     {
         int degree = 0;
-        for(int w: adj(s))
+        for(int w: adj(start))
         {
             degree++;
         }
@@ -79,19 +79,19 @@ public class GraphMatrix
     @Override
     public String toString()
     {
-        StringBuilder graphStr = new StringBuilder("");
-        for(int i = 0; i < v; i++)
+        StringBuilder graphString = new StringBuilder("");
+        for(int i = 0; i < vertices; i++)
         {
-            graphStr.append(i + ":");
-            for(int j = 0; j < v; j++)
+            graphString.append(i + ": ");
+            for(int j = 0; j < vertices; j++)
             {
                 if(adj[i][j])
                 {
-                    graphStr.append(j + " ");
+                    graphString.append(j + " ");
                 }
             }
-            graphStr.append("\n");
+            graphString.append("\n");
         }
-        return graphStr.toString();
+        return graphString.toString();
     }
 }

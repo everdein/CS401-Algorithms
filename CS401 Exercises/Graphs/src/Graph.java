@@ -2,54 +2,46 @@ import java.util.LinkedList;
 
 public class Graph
 {
-    private int v;
-    private int e;
+    private int vertices;
+    private int edges;
     private LinkedList<Integer>[] adj;
-    public Graph(int v)
+    public Graph(int vertices, int edges)
     {
-        this.v = v;
-        this.e = 0;
-        adj = new LinkedList[v];
-        for(int i = 0; i < v; i++)
+        this.vertices = vertices;
+        this.edges = edges;
+        adj = new LinkedList[vertices];
+        for(int i = 0; i < vertices; i++)
         {
             adj[i] = new LinkedList<Integer>();
         }
     }
-    public void addEdge(int v, int w)
+    public void addEdge(int vertices, int w)
     {
-        adj[v].add(w);
-        adj[w].add(v);
+        adj[vertices].add(w);
+        adj[w].add(vertices);
     }
-
-//    public void removeEdge(int v, int w)
-//    {
-//
-//    }
-//
-//    public boolean hasEdge(int v, int w)
-//    {
-//
-//    }
 
     // return # of vertices
     public int v()
     {
-        return v;
+        return vertices;
     }
 
     // return # of edges
     public int e()
     {
-        return e;
+        return edges;
     }
-    public Iterable<Integer> adj(int v)
+
+    public Iterable<Integer> adj(int vertices)
     {
-        return adj[v];
+        return adj[vertices];
     }
-    public int degree(int s)
+
+    public int degree(int start)
     {
         int degree = 0;
-        for(int w: adj(s))
+        for(int w: adj(start))
         {
             degree++;
         }
@@ -59,16 +51,16 @@ public class Graph
     @Override
     public String toString()
     {
-        StringBuilder graphStr = new StringBuilder("");
-        for(int i = 0; i < v; i++)
+        StringBuilder graphString = new StringBuilder("");
+        for(int i = 0; i < vertices; i++)
         {
-            graphStr.append(i + ": ");
+            graphString.append(i + ": ");
             for(int w: adj[i])
             {
-                graphStr.append(w + " ");
+                graphString.append(w + " ");
             }
-            graphStr.append("\n");
+            graphString.append("\n");
         }
-        return graphStr.toString();
+        return graphString.toString();
     }
 }

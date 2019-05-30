@@ -5,5 +5,5 @@ import java.util.Map;
 
 public interface Query <T extends Comparable<T>>
 {
-    HashSet<Integer> execute(Map<T, RedBlackBST<T, HashSet<Integer>>> movieFieldsRBTMap);
+    HashSet<Integer> execute(Map<String, RedBlackBST<T, HashSet<Integer>>> movieFieldsRBTMap);
 }

@@ -1,23 +1,22 @@
-
-import java.util.Iterator;
 import java.util.Stack;
 
 public class DepthFirstSearch
 {
     private boolean[] marked;
     private int[] edgeTo;
-    // Starting index.
-    private int s;
+    private int[] distTo;
+    private int start;
     private Graph graph;
 
-    DepthFirstSearch(Graph graph, int s)
+    DepthFirstSearch(Graph graph, int start)
     {
         this.graph = graph;
-        this.s = s;
+        this.start = start;
         marked = new boolean[graph.v()];
         edgeTo = new int[graph.v()];
+        distTo = new int[graph.v()];
 
-        dfs(graph, s);
+        dfs(graph, start);
     }
 
     public boolean hasPath(int v)
@@ -25,34 +24,38 @@ public class DepthFirstSearch
         return marked[v];
     }
 
+    public int distTo(int v)
+    {
+        return distTo[v];
+    }
+
     public Iterable<Integer> pathTo(int v)
     {
         if(hasPath(v))
         {
             Stack<Integer> path = new Stack<Integer>();
-            for(int x = v; x != s; x = edgeTo[x])
+            for(int x = v; x != start; x = edgeTo[x])
             {
-
                 path.push(x);
             }
-            path.push(s);
+            path.push(start);
             return path;
         }
         return null;
     }
 
-
-
     // Recursive solution.
     private void dfs(Graph g, int v)
     {
         marked[v] = true;
+        distTo[start] = 0;
         for(int w: g.adj(v))
         {
             if(!marked[w])
             {
                 marked[w] = true;
                 edgeTo[w] = v;
+                distTo[w] = 1 + distTo[v];
                 dfs(g, w);
             }
         }
