@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26ab4d82-8d33-40f5-bb96-8d92cbb690c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie_metadata.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie_metadata5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/And.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS401 Assignment 3/And.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/EqualTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/MovieDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/And.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EqualTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MovieDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnaryExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/.idea/HashSet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/And.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Equal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/GreaterThan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/GreaterThanOrEqualTo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/LessThan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/LessThanOrEqualTo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/MoviesDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Not.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Or.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS401 Assignment 3/UnaryExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/HashSet/Student.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,10 +57,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MoviesDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state>
+              <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#15877#15878#0" expanded="true" />
                 <element signature="e#15912#15913#0" expanded="true" />
               </folding>
             </state>
@@ -126,12 +136,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Equal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="75">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Query.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+            <state relative-caret-position="60">
+              <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Or.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="67" lean-forward="true" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+            <state relative-caret-position="30">
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/And.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            <state relative-caret-position="90">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -249,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="562" />
     <option name="y" value="23" />
     <option name="width" value="1358" />
@@ -279,8 +287,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,17 +350,18 @@
       <updated>1557981780673</updated>
       <workItem from="1558643943103" duration="8960000" />
       <workItem from="1558730028769" duration="76098000" />
+      <workItem from="1559309684328" duration="898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85058000" />
+    <option name="totallyTimeSpent" value="85956000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="562" y="23" width="1358" height="1177" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19984803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14217253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -419,7 +428,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/RedBlackTree.java" />
-    <entry file="file://$PROJECT_DIR$/src/MoviesDB.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/corba/se/idl/constExpr/Equal.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -427,20 +435,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NotEqualTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NotEqualTo.java" />
+    <entry file="file://$PROJECT_DIR$/src/BinaryExpression.java" />
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/RedBlackBST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -512,64 +508,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MovieDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie_metadata.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Or.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="67" lean-forward="true" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UnaryExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/MovieDatabase.java" />
+    <entry file="file://$PROJECT_DIR$/movie_metadata.csv" />
+    <entry file="file://$PROJECT_DIR$/src/MoviesDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="15" selection-start-column="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#15877#15878#0" expanded="true" />
+            <element signature="e#15912#15913#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -638,13 +585,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoviesDB.java">
+    <entry file="file://$PROJECT_DIR$/src/Equal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#15912#15913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnaryExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Or.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/And.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

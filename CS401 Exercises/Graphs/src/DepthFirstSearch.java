@@ -33,7 +33,7 @@ public class DepthFirstSearch
     {
         if(hasPath(v))
         {
-            Stack<Integer> path = new Stack<Integer>();
+            Stack<Integer> path = new Stack<>();
             for(int x = v; x != start; x = edgeTo[x])
             {
                 path.push(x);
