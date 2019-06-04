@@ -18,10 +18,11 @@
 
 import edu.princeton.cs.algs4.In;
 
-public class Main {
-
-    public static void main(String[] args) {
-
+public class Main
+{
+    public static void main(String[] args)
+    {
+        // Stores text file.
         String txt = "sample1.txt";
 
         // finding n and initializing an array
@@ -29,9 +30,12 @@ public class Main {
         int[] particles = readSoil(txt, n);
 
         Soil soil = new Soil(particles, n);
-        if(soil.doesDrain()) {
+        if(soil.doesDrain())
+        {
             System.out.println("Allows water to drain.");
-        } else {
+        }
+        else
+        {
             System.out.println("Doesn't allow water to drain.");
         }
     }
@@ -40,11 +44,12 @@ public class Main {
     // this should be faster than iterating through the entire
     // file and then finding the square root
     // this is O(n).
-    private static int findSize(String fileName) {
+    private static int findSize(String fileName)
+    {
         In in = new In(fileName);
         int n = 0;
-
-        while(in.hasNextLine()) {
+        while(in.hasNextLine())
+        {
             n++;
             in.readLine();
         }
@@ -54,16 +59,16 @@ public class Main {
     // iterate through every cell in the .txt and add it to the array
     // this actually operates in O(n^2) because we are iterating through
     // every cell and n is defined as the square root of the number of cells.
-    private static int[] readSoil(String fileName, int n) {
+    private static int[] readSoil(String fileName, int n)
+    {
         In in = new In(fileName);
         int[] arr = new int[n*n];
         int num = 0;
-
-        while(!in.isEmpty()){
+        while(!in.isEmpty())
+        {
             arr[num] = in.readInt();
             num++;
         }
-
         return arr;
     }
 }

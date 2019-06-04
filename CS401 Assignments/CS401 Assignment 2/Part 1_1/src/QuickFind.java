@@ -1,5 +1,5 @@
-public class QuickFind implements UnionFind {
-
+public class QuickFind implements UnionFind
+{
     // an array to hold each element
     private int[] id;
 
@@ -8,13 +8,14 @@ public class QuickFind implements UnionFind {
     private int count;
 
     // constructor
-    public QuickFind(int n) {
-
+    public QuickFind(int n)
+    {
         // initializes our array to the size of our data
         id = new int[n];
 
         // assigns an id to every location in our array
-        for (int i = 0; i < id.length; i++) {
+        for (int i = 0; i < id.length; i++)
+        {
             id[i] = i;
         }
 
@@ -24,18 +25,21 @@ public class QuickFind implements UnionFind {
     }
 
     @Override
-    public void print() {
-        for (int i: id) {
+    public void print()
+    {
+        for (int i: id)
+        {
             System.out.print(i + " ");
         }
         System.out.println();
     }
 
     @Override
-    public void union(int p, int q) {
-
+    public void union(int p, int q)
+    {
         // if the elements are already connected, then return
-        if (find(p, q)) {
+        if (find(p, q))
+        {
             return;
         }
 
@@ -45,7 +49,8 @@ public class QuickFind implements UnionFind {
 
         // now, iterate through the entire array. If any of the id's match p,
         // change them to q.
-        for (int i = 0; i < id.length; i++) {
+        for (int i = 0; i < id.length; i++)
+        {
             if(id[i] == pID) {
                 id[i] = qID;
             }
@@ -53,7 +58,6 @@ public class QuickFind implements UnionFind {
 
         // now we decrement the number of groups of elements
         count--;
-
 
         // compares to array value, so more array accesses
         // less efficient, should store values as primitives like above
@@ -69,15 +73,15 @@ public class QuickFind implements UnionFind {
     }
 
     @Override
-    public boolean find(int p, int q) {
-
+    public boolean find(int p, int q)
+    {
         // are p and q connected? if yes, return true, if no, return false
         return id[p] == id[q];
     }
 
     @Override
-    public int getCount() {
-
+    public int getCount()
+    {
         // how many groups of elements are there?
         return count;
     }
