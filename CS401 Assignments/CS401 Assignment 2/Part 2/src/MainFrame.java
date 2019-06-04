@@ -1,8 +1,13 @@
+/**
+//                   //
+////   MainFrame   ////
+//                   //
+**/
+
 import javax.swing.*;
 
 public class MainFrame  extends JFrame
 {
-
     // Display box height and width.
     public static final int HEIGHT = 800;
     public static final int WIDTH = 800;

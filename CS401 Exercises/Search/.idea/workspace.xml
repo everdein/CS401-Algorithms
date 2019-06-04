@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2804d8-5dbc-4b6c-994c-3af34b233484" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../HashSet/.idea/HashSet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashSet/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashSet/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashSet/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashSet/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/And.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Equal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/GreaterThan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/GreaterThanOrEqualTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/LessThan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/LessThanOrEqualTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/MoviesDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Not.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Or.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/Query.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 3/out/production/CS401 Assignment 3/UnaryExpression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graphs/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphs/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Graphs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graphs/src/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphs/src/BreadthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graphs/src/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphs/src/DepthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graphs/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphs/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HashSet/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HashSet/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HashSet/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HashSet/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -190,17 +163,17 @@
       <updated>1557162404699</updated>
       <workItem from="1558716670746" duration="475000" />
       <workItem from="1559315702894" duration="221000" />
+      <workItem from="1559583878010" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="696000" />
+    <option name="totallyTimeSpent" value="708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15654951" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15814696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

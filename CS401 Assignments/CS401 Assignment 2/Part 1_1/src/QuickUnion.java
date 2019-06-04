@@ -1,5 +1,4 @@
-public class QuickUnion implements UnionFind
-{
+public class QuickUnion implements UnionFind {
 
     // an array to hold each element
     protected int[] id;
@@ -9,14 +8,13 @@ public class QuickUnion implements UnionFind
     protected int count;
 
     // constructor
-    public QuickUnion(int n)
-    {
+    public QuickUnion(int n) {
+
         // initializes our array to the size of our data
         id = new int[n];
 
         // assigns an id to every location in our array
-        for(int i = 0; i < id.length; i++)
-        {
+        for(int i = 0; i < id.length; i++) {
             id[i] = i;
         }
 
@@ -28,21 +26,18 @@ public class QuickUnion implements UnionFind
     // what's unique about QuickUnion is that we connect roots of nodes,
     // not just the nodes themselves. This requires us to create a method
     // to find the root of each node.
-    public int root(int i)
-    {
+    public int root(int i) {
+
         // while the id of the number doesn't match the number, follow the id back
-        while(id[i] != i)
-        {
+        while(id[i] != i) {
             i = id[i];
         }
         return i;
     }
 
     @Override
-    public void print()
-    {
-        for (int i: id)
-        {
+    public void print() {
+        for (int i: id) {
             System.out.print(i + " ");
         }
         System.out.println();
@@ -50,12 +45,11 @@ public class QuickUnion implements UnionFind
 
 
     @Override
-    public void union(int p, int q)
-    {
-        if(find(p, q))
-        {
+    public void union(int p, int q) {
+        if(find(p, q)) {
             return;
         }
+
         // same as QuickFind except we want the root, not just the id
         int rp = root(p);
         int rq = root(q);
@@ -65,15 +59,13 @@ public class QuickUnion implements UnionFind
 
     // same as QuickFind except we want to see if the elements share the same root
     @Override
-    public boolean find(int p, int q)
-    {
+    public boolean find(int p, int q) {
         return root(p) == root(q);
     }
 
     // same as QuickFind
     @Override
-    public int getCount()
-    {
+    public int getCount() {
         return count;
     }
 }

@@ -1,7 +1,6 @@
-public interface UnionFind
-{
-    void union(int p, int q);
-    boolean find(int p, int q);
-    int getCount();
-    void print();
+public interface UnionFind {
+    public void union(int p, int q);
+    public boolean find(int p, int q);
+    public int getCount();
+    public void print();
 }

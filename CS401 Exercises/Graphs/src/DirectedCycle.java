@@ -7,8 +7,7 @@ public class DirectedCycle
     private boolean[] onStack;
     private Stack<Integer> cycle;
 
-    //Determines whether the digraph has a directed cycle and, if so,
-    //finds such a cycle
+    // Determines whether the digraph has a directed cycle and, if so, finds such a cycle
     public DirectedCycle(DirectedGraph graph)
     {
         marked = new boolean[graph.v()];
@@ -57,7 +56,7 @@ public class DirectedCycle
     //Does the digraph have a directed cycle?
     public boolean hasCycle()
     {
-        return cycle == null;
+        return cycle != null;
     }
 
     //Returns a directed cycle if the digraph has a

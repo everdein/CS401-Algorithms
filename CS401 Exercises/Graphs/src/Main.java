@@ -3,11 +3,31 @@ import edu.princeton.cs.algs4.In;
 public class Main {
     public static void main(String[] args)
     {
-        graph();
-        graphMatrix();
-        depthFirstSearch();
-        breadthFirstSearch();
-        directedGraphAndCycle();
+//        graph();
+//        graphMatrix();
+//        depthFirstSearch();
+//        breadthFirstSearch();
+//        directedGraphAndCycle();
+
+
+
+        DirectedGraph digraph = new DirectedGraph(8);
+        digraph.addEdge(0,1 );
+        digraph.addEdge(1,2 );
+        digraph.addEdge(3,2 );
+        digraph.addEdge(3,4 );
+
+        DirectedCycle dc = new DirectedCycle(digraph);
+        if(!dc.hasCycle())
+        {
+            DepthFirstOrder depthFirstOrder = new DepthFirstOrder(digraph);
+            System.out.println(depthFirstOrder.reversePostOrder());
+        }
+        else
+        {
+            System.out.println("No topological order.");
+        }
+
     }
 
     //                     //
