@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72472888-6aa1-4b2d-b399-9bf28bc31caf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/QuickFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/QuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/QuickUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/Soil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/Soil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/WeightedQuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 2/Part 1_1/src/WeightedQuickUnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/And.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Equal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/GreaterThan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/GreaterThanOrEqualTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/LessThan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/LessThanOrEqualTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/MoviesDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Not.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/UnaryExpression.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,16 +25,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#67#68#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,12 +125,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559665332763</updated>
       <workItem from="1559665336096" duration="681000" />
-      <workItem from="1559676646826" duration="366000" />
+      <workItem from="1559676646826" duration="1305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1047000" />
+    <option name="totallyTimeSpent" value="1986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="638" y="23" width="1282" height="1177" extended-state="0" />
@@ -172,8 +181,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#67#68#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,19 +1,18 @@
-public class Movie <T extends Comparable<T>>
-{
-    int id;
-    String color;
-    String movie_title;
-    T duration;
-    String director_name;
-    String actor_1_name;
-    String actor_2_name;
-    String actor_3_name;
-    String movie_imdb_link;
-    String language;
-    String country;
-    String content_rating;
-    T title_year;
-    T imdb_score;
+public class Movie<T extends Comparable<T>> {
+    private int id;
+    private T color;
+    private T title;
+    private T duration;
+    private T director;
+    private T actor1;
+    private T actor2;
+    private T actor3;
+    private T url;
+    private T language;
+    private T country;
+    private T rating;
+    private T year;
+    private T score;
 
     public int getId() {
         return id;
@@ -23,20 +22,20 @@ public class Movie <T extends Comparable<T>>
         this.id = id;
     }
 
-    public String getColor() {
+    public T getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(T color) {
         this.color = color;
     }
 
-    public String getMovie_title() {
-        return movie_title;
+    public T getTitle() {
+        return title;
     }
 
-    public void setMovie_title(String movie_title) {
-        this.movie_title = movie_title;
+    public void setTitle(T title) {
+        this.title = title;
     }
 
     public T getDuration() {
@@ -47,83 +46,90 @@ public class Movie <T extends Comparable<T>>
         this.duration = duration;
     }
 
-    public String getDirector_name() {
-        return director_name;
+    public T getDirector() {
+        return director;
     }
 
-    public void setDirector_name(String director_name) {
-        this.director_name = director_name;
+    public void setDirector(T director) {
+        this.director = director;
     }
 
-    public String getActor_1_name() {
-        return actor_1_name;
+    public T getActor1() {
+        return actor1;
     }
 
-    public void setActor_1_name(String actor_1_name) {
-        this.actor_1_name = actor_1_name;
+    public void setActor1(T actor1) {
+        this.actor1 = actor1;
     }
 
-    public String getActor_2_name() {
-        return actor_2_name;
+    public T getActor2() {
+        return actor2;
     }
 
-    public void setActor_2_name(String actor_2_name) {
-        this.actor_2_name = actor_2_name;
+    public void setActor2(T actor2) {
+        this.actor2 = actor2;
     }
 
-    public String getActor_3_name() {
-        return actor_3_name;
+    public T getActor3() {
+        return actor3;
     }
 
-    public void setActor_3_name(String actor_3_name) {
-        this.actor_3_name = actor_3_name;
+    public void setActor3(T actor3) {
+        this.actor3 = actor3;
     }
 
-    public String getMovie_imdb_link() {
-        return movie_imdb_link;
+    public T getUrl() {
+        return url;
     }
 
-    public void setMovie_imdb_link(String movie_imdb_link) {
-        this.movie_imdb_link = movie_imdb_link;
+    public void setUrl(T url) {
+        this.url = url;
     }
 
-    public String getLanguage() {
+    public T getLanguage() {
         return language;
     }
 
-    public void setLanguage(String language) {
+    public void setLanguage(T language) {
         this.language = language;
     }
 
-    public String getCountry() {
+    public T getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(T country) {
         this.country = country;
     }
 
-    public String getContent_rating() {
-        return content_rating;
+    public T getRating() {
+        return rating;
     }
 
-    public void setContent_rating(String content_rating) {
-        this.content_rating = content_rating;
+    public void setRating(T rating) {
+        this.rating = rating;
     }
 
-    public T getTitle_year() {
-        return title_year;
+    public T getYear() {
+        return year;
     }
 
-    public void setTitle_year(T title_year) {
-        this.title_year = title_year;
+    public void setYear(T year) {
+        this.year = year;
     }
 
-    public T getImdb_score() {
-        return imdb_score;
+    public T getScore() {
+        return score;
     }
 
-    public void setImdb_score(T imdb_score) {
-        this.imdb_score = imdb_score;
+    public void setScore(T score) {
+        this.score = score;
+    }
+
+    // not needed, but is useful
+    public void printMovie() {
+        System.out.println(id + ", " + color + ", " + title + ", " + duration + ", " + director +
+                ", " + actor1 + ", " + actor2 + ", " + actor3 + ", " + url + ", " + language + ", " +
+                country + ", " + rating + ", " + year + ", " + score);
     }
 }

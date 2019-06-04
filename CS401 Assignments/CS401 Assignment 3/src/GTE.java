@@ -2,9 +2,9 @@ import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.HashSet;
 import java.util.Map;
 
-public class Equal<T extends Comparable<T>> extends UnaryExpression<T> {
+public class GTE<T extends Comparable<T>> extends UnaryExpression<T> {
 
-    public Equal(String field, T value) {
+    public GTE (String field, T value) {
         super(field, value);
     }
 
@@ -14,7 +14,15 @@ public class Equal<T extends Comparable<T>> extends UnaryExpression<T> {
         RedBlackBST<T, HashSet<Integer>> RBT = new RedBlackBST<>();
         RBT = indexTreeMap.get(field);
 
-        return RBT.get(value);
+        HashSet<Integer> temp = new HashSet<>();
+
+        // same as GT, we just add the =
+        for (T s: RBT.keys()) {
+            if(s.compareTo(value) >= 0) {
+                temp.addAll(RBT.get(s));
+            }
+        }
+        return temp;
     }
 
     @Override

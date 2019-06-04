@@ -2,28 +2,26 @@ import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.HashSet;
 import java.util.Map;
 
-public class Not<T extends Comparable<T>> implements Query<T> {
+public class NotEqual<T extends Comparable<T>> extends UnaryExpression<T> {
 
-    // Not should only accept 1 query
-    Query query;
 
-    public Not(Query query) {
-        this.query = query;
+    public NotEqual(String field, T value) {
+        super(field, value);
     }
 
     @Override
     public HashSet<Integer> execute(Map<String, RedBlackBST<T, HashSet<Integer>>> indexTreeMap) {
 
-        String field = query.getField();
+        RedBlackBST<T, HashSet<Integer>> RBT = new RedBlackBST<>();
+        RBT = (RedBlackBST<T, HashSet<Integer>>) indexTreeMap.get(field);
 
         // this is everything we don't want
-        HashSet<Integer> equals = query.execute(indexTreeMap);
-
+        HashSet<Integer> equals = RBT.get(value);
 
         // this is everything
-        HashSet<Integer> notEquals = new HashSet<>();
-        for (T s:indexTreeMap.get(field).keys()) {
-            notEquals.addAll(indexTreeMap.get(field).get(s));
+        HashSet<Integer> notEquals = new HashSet<Integer>();
+        for (T s: RBT.keys()) {
+            notEquals.addAll(RBT.get(s));
         }
 
         // remove everything we don't want from everything
@@ -38,6 +36,6 @@ public class Not<T extends Comparable<T>> implements Query<T> {
 
     @Override
     public String getField() {
-        return null;
+        return field;
     }
 }

@@ -1,31 +1,35 @@
+import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Map;
 
-public abstract class Or <T extends Comparable<T>> implements Query
-{
-    private ArrayList<Query> queries;
+public class Or<T extends Comparable<T>> implements Query<T> {
 
-    public Or(Query... queries)
-    {
-        this.queries = new ArrayList<>();
-        for(Query query : queries)
-        {
-            this.queries.add(query);
-        }
+    private ArrayList<Query> queries = new ArrayList<Query>();
+
+    public Or(Query... queries) {
+        this.queries = new ArrayList<Query>();
+        this.queries.addAll(Arrays.asList(queries));
     }
 
     @Override
-    public HashSet<Integer> execute(Map redBlackBSTMap)
-    {
+    public HashSet<Integer> execute(Map<String, RedBlackBST<T, HashSet<Integer>>> indexTreeMap) {
+
         HashSet<Integer> orResult = new HashSet<>();
-        for(int i = 0; i < queries.size(); i++)
-        {
+
+        // combines all query results
+        for(int i = 0; i < queries.size(); i++) {
             Query temp = queries.get(i);
-            HashSet<Integer> tempHashSet = temp.execute(redBlackBSTMap);
-            orResult.addAll(tempHashSet);
+            HashSet<Integer> tempHS = temp.execute(indexTreeMap);
+            orResult.addAll(tempHS);
         }
+
         return orResult;
     }
 
+    @Override
+    public String getField() {
+        return null;
+    }
 }
