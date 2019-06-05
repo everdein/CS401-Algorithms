@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72472888-6aa1-4b2d-b399-9bf28bc31caf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/And.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Equal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/GreaterThan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/GreaterThanOrEqualTo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/LessThan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/LessThanOrEqualTo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/MoviesDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Not.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Or.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/Query.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 3/src/UnaryExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,16 +112,15 @@
       <option name="presentableId" value="Default" />
       <updated>1559665332763</updated>
       <workItem from="1559665336096" duration="681000" />
-      <workItem from="1559676646826" duration="1305000" />
+      <workItem from="1559676646826" duration="2347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1986000" />
+    <option name="totallyTimeSpent" value="3028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="638" y="23" width="1282" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25403225" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
