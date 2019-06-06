@@ -1,6 +1,7 @@
 import edu.princeton.cs.algs4.In;
 
-public class Main {
+public class Main
+{
     public static void main(String[] args)
     {
 //        graph();
@@ -8,26 +9,9 @@ public class Main {
 //        depthFirstSearch();
 //        breadthFirstSearch();
 //        directedGraphAndCycle();
-
-
-
-        DirectedGraph digraph = new DirectedGraph(8);
-        digraph.addEdge(0,1 );
-        digraph.addEdge(1,2 );
-        digraph.addEdge(3,2 );
-        digraph.addEdge(3,4 );
-
-        DirectedCycle dc = new DirectedCycle(digraph);
-        if(!dc.hasCycle())
-        {
-            DepthFirstOrder depthFirstOrder = new DepthFirstOrder(digraph);
-            System.out.println(depthFirstOrder.reversePostOrder());
-        }
-        else
-        {
-            System.out.println("No topological order.");
-        }
-
+//        topologicalDirectedGRaph();
+//        edgeWeightedGraph();
+        edgeWeightedDirectedGraph();
     }
 
     //                     //
@@ -145,5 +129,62 @@ public class Main {
         {
             System.out.println("Cycle:"+ dc.cycle());
         }
+    }
+
+    //                                //
+    //// Topological Directed Graph ////
+    //                                //
+    public static void topologicalDirectedGRaph()
+    {
+        DirectedGraph digraph = new DirectedGraph(8);
+        digraph.addEdge(0,1 );
+        digraph.addEdge(1,2 );
+        digraph.addEdge(3,2 );
+        digraph.addEdge(3,4 );
+
+        DirectedCycle dc = new DirectedCycle(digraph);
+        if(!dc.hasCycle())
+        {
+            DepthFirstOrder depthFirstOrder = new DepthFirstOrder(digraph);
+            System.out.println(depthFirstOrder.reversePostOrder());
+        }
+        else
+        {
+            System.out.println("No topological order.");
+        }
+    }
+
+    public static void edgeWeightedGraph()
+    {
+        In in = new In("data.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
+        for(int i = 0; i < edges; i++)
+        {
+            int v = in.readInt();
+            int w = in.readInt();
+            double weight = in.readDouble();
+            Edge edge = new Edge(v, w, weight);
+            graph.addEdge(edge);
+        }
+        System.out.println(graph);
+    }
+
+    public static void edgeWeightedDirectedGraph()
+    {
+        In in = new In("data.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+        EdgeWeightedDirectedGraph graph = new EdgeWeightedDirectedGraph(vertices);
+        for(int i = 0; i < edges; i++)
+        {
+            int v = in.readInt();
+            int w = in.readInt();
+            double weight = in.readDouble();
+            DirectedEdge directedEdge = new DirectedEdge(v, w, weight);
+            graph.addEdge(directedEdge);
+        }
+        System.out.println(graph);
     }
 }
