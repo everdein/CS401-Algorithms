@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72472888-6aa1-4b2d-b399-9bf28bc31caf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Edge.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding>
                 <element signature="e#67#68#0" expanded="true" />
                 <element signature="e#117#118#0" expanded="true" />
@@ -58,6 +53,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,7 +71,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,17 +123,18 @@
       <updated>1559665332763</updated>
       <workItem from="1559665336096" duration="681000" />
       <workItem from="1559676646826" duration="4990000" />
+      <workItem from="1559838668769" duration="1310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5671000" />
+    <option name="totallyTimeSpent" value="6981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="710" y="23" width="1210" height="1177" extended-state="0" />
+    <frame x="637" y="23" width="1283" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2696918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25785658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -181,24 +177,12 @@
     <entry file="file://$PROJECT_DIR$/artists.dat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DirectedEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EdgeWeightedDirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DirectedEdge.java" />
+    <entry file="file://$PROJECT_DIR$/src/EdgeWeightedDirectedGraph.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
             <element signature="e#67#68#0" expanded="true" />
             <element signature="e#117#118#0" expanded="true" />
