@@ -6,49 +6,60 @@ public class DirectedGraph {
     private Bag<Integer>[] adj;
     private int[] inDegree;
 
-    public DirectedGraph(int v) {
+    public DirectedGraph(int v)
+    {
         this.v = v;
         adj = new Bag[v];
         inDegree = new int[v];
-        for (int i = 0; i < v; i++) {
+        for (int i = 0; i < v; i++)
+        {
             adj[i] = new Bag<Integer>();
         }
         e = 0;
     }
 
-    public void addEdge(int v, int w) {
+    public void addEdge(int v, int w)
+    {
         adj[v].add(w);
         inDegree[w]++;
         e++;
     }
 
 
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(int v)
+    {
         return adj[v];
     }
 
-    public int inDegree(int v) {
+    public int inDegree(int v)
+    {
         return inDegree[v];
     }
 
-    public int outDegree(int v) {
+    public int outDegree(int v)
+    {
         return adj[v].size();
     }
 
-    public int v() {
+    public int v()
+    {
         return v;
     }
 
-    public int e() {
+    public int e()
+    {
         return e;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         StringBuilder strBuilder = new StringBuilder();
-        for (int v = 0; v < adj.length; v++) {
+        for (int v = 0; v < adj.length; v++)
+        {
             strBuilder.append(v + ":");
-            for (int w : adj(v)) {
+            for (int w : adj(v))
+            {
                 strBuilder.append(w + " ");
             }
             strBuilder.append("\n");

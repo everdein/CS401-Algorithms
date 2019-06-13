@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72472888-6aa1-4b2d-b399-9bf28bc31caf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/algs4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/KruskalMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/tiny_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS401 Assignment 4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS401 Assignment 4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/DirectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/DirectedGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/EdgeWeightedDirectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/EdgeWeightedDirectedGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/EdgeWeightedDirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/EdgeWeightedDirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,21 +29,79 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding>
-                <element signature="e#67#68#0" expanded="true" />
-                <element signature="e#117#118#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6330076">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="545">
+                  <caret line="197" column="60" lean-forward="true" selection-start-line="197" selection-start-column="60" selection-end-line="197" selection-end-column="60" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/user_artists.dat">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/artists.dat">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/user_friends.dat">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15285">
+                  <caret line="1019" column="8" selection-start-line="1019" selection-start-column="8" selection-end-line="1019" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fileLines</find>
+      <find>graph</find>
+      <find>createGRaph</find>
+      <find>662</find>
+      <find>211</find>
+      <find>System</find>
+      <find>51</find>
+      <find>1291387.0</find>
+      <find>1058405.0</find>
+      <find>963449.0</find>
+      <find>1301308.0</find>
+      <find>2393140.0</find>
+      <find>18737</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -37,14 +109,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Users.java" />
+        <option value="$PROJECT_DIR$/src/User.java" />
+        <option value="$PROJECT_DIR$/user_artists.dat" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="637" />
+    <option name="x" value="638" />
     <option name="y" value="23" />
-    <option name="width" value="1283" />
+    <option name="width" value="1282" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,6 +156,9 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -110,6 +188,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -123,27 +206,28 @@
       <updated>1559665332763</updated>
       <workItem from="1559665336096" duration="681000" />
       <workItem from="1559676646826" duration="4990000" />
-      <workItem from="1559838668769" duration="1310000" />
+      <workItem from="1559838668769" duration="32024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6981000" />
+    <option name="totallyTimeSpent" value="37695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="637" y="23" width="1283" height="1177" extended-state="0" />
+    <frame x="638" y="23" width="1282" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25785658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25725806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3299539" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299539" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -168,27 +252,167 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user_friends.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_artists.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artists.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DirectedEdge.java" />
     <entry file="file://$PROJECT_DIR$/src/EdgeWeightedDirectedGraph.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/User">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="177" column="16" lean-forward="true" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
           <folding>
-            <element signature="e#67#68#0" expanded="true" />
-            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#57#58#0" expanded="true" />
+            <element signature="e#85#86#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Digraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="156" column="18" selection-start-line="156" selection-start-column="18" selection-end-line="156" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/DirectedEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/EdgeWeightedDigraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_friends.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15285">
+          <caret line="1019" column="8" selection-start-line="1019" selection-start-column="8" selection-end-line="1019" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_artists.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artists.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="197" column="60" lean-forward="true" selection-start-line="197" selection-start-column="60" selection-end-line="197" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>algs4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

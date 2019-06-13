@@ -3,6 +3,7 @@ public class BubbleSort
     // Bubble sort.
     public static void bubbleSort(Comparable[] a)
     {
+        System.out.println("Bubble Sort");
         for(int i = 0; i < a.length; i++)
         {
             for(int j = a.length - 1; j > 0; j--)

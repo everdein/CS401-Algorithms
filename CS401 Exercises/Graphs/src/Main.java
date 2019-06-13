@@ -11,7 +11,8 @@ public class Main
 //        directedGraphAndCycle();
 //        topologicalDirectedGRaph();
 //        edgeWeightedGraph();
-        edgeWeightedDirectedGraph();
+//        edgeWeightedDirectedGraph();
+        kruskalMST();
     }
 
     //                     //
@@ -19,7 +20,7 @@ public class Main
     //                     //
     public static Graph readTxt()
     {
-        In in = new In("data.txt");
+        In in = new In("tiny_data.txt");
         int vertices = in.readInt();
         int edges = in.readInt();
         Graph graph = new Graph(vertices, edges);
@@ -106,7 +107,6 @@ public class Main
         System.out.println("Path Distance: " + bfs.distTo(endingVertex));
     }
 
-
     //                            //
     //// Directed Graph & Cycle ////
     //                            //
@@ -154,6 +154,9 @@ public class Main
         }
     }
 
+    //                         //
+    //// Edge Weighted Graph ////
+    //                         //
     public static void edgeWeightedGraph()
     {
         In in = new In("data.txt");
@@ -171,6 +174,9 @@ public class Main
         System.out.println(graph);
     }
 
+    //                                  //
+    //// Edge Weighted Directed Graph ////
+    //                                  //
     public static void edgeWeightedDirectedGraph()
     {
         In in = new In("data.txt");
@@ -186,5 +192,27 @@ public class Main
             graph.addEdge(directedEdge);
         }
         System.out.println(graph);
+    }
+
+    //                                   //
+    //// Kruskal Minimum Spanning tree ////
+    //                                   //
+    public static void kruskalMST()
+    {
+        In in = new In("data.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
+        for(int i = 0; i < edges; i++)
+        {
+            int v = in.readInt();
+            int w = in.readInt();
+            double weight = in.readDouble();
+            Edge edge = new Edge(v, w, weight);
+            graph.addEdge(edge);
+        }
+        KruskalMST mst = new KruskalMST(graph);
+        System.out.println(mst.weight());
+        System.out.println(mst.mst());
     }
 }
