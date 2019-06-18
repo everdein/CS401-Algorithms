@@ -33,7 +33,7 @@ public class SocialNetworkSystem
 
         // Sets file name.
         String fileName3 = "artists.dat";
-        HashMap artistMap = artistsMap.getArtists(fileName3);
+        HashMap<Integer, String> artistMap = artistsMap.getArtists(fileName3);
 
         // Declares user ID.
         int user = 3;

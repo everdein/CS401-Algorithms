@@ -155,14 +155,14 @@ class Queries
     }
 
     // Fills map with artists the user and friends listen to, and updates artist weight to maximum weight.
-    private void fillingMapWithArtists(HashMap<Integer, Artist> artistHashMap, DirectedEdge directedEdge, HashMap artistMap)
+    private void fillingMapWithArtists(HashMap<Integer, Artist> artistHashMap, DirectedEdge directedEdge, HashMap<Integer, String> artistMap)
     {
         // Creates artist object.
         Artist artist = new Artist();
 
         // Sets artist id, name and weight.
         artist.setID(directedEdge.to());
-        artist.setName((String) artistMap.get(directedEdge.to()));
+        artist.setName(artistMap.get(directedEdge.to()));
         artist.setWeight(directedEdge.weight());
 
         // Checks if current artist weight is greater than artist wait already stored.

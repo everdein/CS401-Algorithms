@@ -11,7 +11,7 @@ public class ArtistsMap
 
     // Reads the artist.dat file and parses each line to get the artist id and name.
     // Then stores these variables into a hash map.
-    public HashMap getArtists(String fileName3)
+    public HashMap<Integer, String> getArtists(String fileName3)
     {
         In in = new In(fileName3);
         in.readLine();

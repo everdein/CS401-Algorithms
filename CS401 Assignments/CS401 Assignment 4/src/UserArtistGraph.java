@@ -25,7 +25,7 @@ class UserArtistGraph
         {
             int v = in.readInt();
             int w = in.readInt();
-            int weight = in.readInt();
+            double weight = in.readDouble();
             DirectedEdge directedEdge = new DirectedEdge(v, w, weight);
             edgeWeightedDigraph.addEdge(directedEdge);
         }
