@@ -7,12 +7,13 @@ public class Main
 //        graph();
 //        graphMatrix();
 //        depthFirstSearch();
-//        breadthFirstSearch();
+        breadthFirstSearch();
 //        directedGraphAndCycle();
 //        topologicalDirectedGRaph();
 //        edgeWeightedGraph();
 //        edgeWeightedDirectedGraph();
-        kruskalMST();
+//        primLazy();
+//        kruskalMST();
     }
 
     //                     //
@@ -194,25 +195,52 @@ public class Main
         System.out.println(graph);
     }
 
-    //                                   //
-    //// Kruskal Minimum Spanning tree ////
-    //                                   //
-    public static void kruskalMST()
+    //               //
+    //// Prim Lazy ////
+    //               //
+    public static void primLazy()
     {
-        In in = new In("data.txt");
+        In in = new In("d.txt");
         int vertices = in.readInt();
         int edges = in.readInt();
+
         EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
-        for(int i = 0; i < edges; i++)
-        {
+
+        for(int i=0;i<edges;i++) {
             int v = in.readInt();
             int w = in.readInt();
             double weight = in.readDouble();
             Edge edge = new Edge(v, w, weight);
             graph.addEdge(edge);
         }
-        KruskalMST mst = new KruskalMST(graph);
-        System.out.println(mst.weight());
-        System.out.println(mst.mst());
+
+
+        PrimLazy prim = new PrimLazy(graph);
+        System.out.println(prim.weight());
+        System.out.println(prim.mst());
+    }
+
+    //                 //
+    //// Kruskal MST ////
+    //                 //
+    public static void kruskalMST()
+    {
+        In in = new In("data.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+
+        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
+
+        for(int i=0;i<edges;i++) {
+            int v = in.readInt();
+            int w = in.readInt();
+            double weight = in.readDouble();
+            Edge edge = new Edge(v, w, weight);
+            graph.addEdge(edge);
+        }
+
+        KruskalMST prim = new KruskalMST(graph);
+        System.out.println(prim.weight());
+        System.out.println(prim.mst());
     }
 }
