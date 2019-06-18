@@ -11,9 +11,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-class SocialNetworkSystemTest // extends SocialNetworkSystem
+class SocialNetworkSystemTest
 {
-
     // Declares class objects.
     private static UserFriendGraph userFriendGraph = new UserFriendGraph();
     private static UserArtistGraph userArtistGraph = new UserArtistGraph();
