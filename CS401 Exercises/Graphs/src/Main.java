@@ -102,14 +102,14 @@ public class Main
     //           //
     public static void graph()
     {
-        Graph g = readGraphTextFile();
+        Graph graph = readGraphTextFile();
 
         System.out.println("---------------------------------------");
-        System.out.println("Graph:\n" + g);
-        System.out.println("Vertices: " + g.v());
-        System.out.println("Edges: " + g.e());
-        System.out.println("Degree: " + g.degree(2));
-        System.out.println("Adjacent: " + g.adj(2));
+        System.out.println("Graph:\n" + graph);
+        System.out.println("Vertices: " + graph.v());
+        System.out.println("Edges: " + graph.e());
+        System.out.println("Degree: " + graph.degree(2));
+        System.out.println("Adjacent: " + graph.adj(2));
     }
 
     //                  //
@@ -117,16 +117,16 @@ public class Main
     //                  //
     public static void graphMatrix()
     {
-        Graph g = readGraphTextFile();
+        Graph graph = readGraphTextFile();
 
         System.out.println("---------------------------------------");
         System.out.println("Graph Matrix:");
-        System.out.println(g);
+        System.out.println(graph);
         System.out.print("Ajacent: " );
 
         int adjacent = 2;
 
-        for(int w: g.adj(adjacent))
+        for(int w: graph.adj(adjacent))
         {
             System.out.print(w + " ");
         }
@@ -152,16 +152,16 @@ public class Main
     //                        //
     public static void depthFirstSearch()
     {
-        Graph g = readGraphTextFile();
+        Graph graph = readGraphTextFile();
 
         System.out.println("---------------------------------------");
         System.out.println("Depth First Search Graph:");
-        System.out.println(g);
+        System.out.println(graph);
 
         int startingVertex = 0;
         int endingVertex = 6;
 
-        DepthFirstSearch bfs = new DepthFirstSearch(g, startingVertex);
+        DepthFirstSearch bfs = new DepthFirstSearch(graph, startingVertex);
 
         if(bfs.hasPath(endingVertex))
         {
@@ -178,16 +178,16 @@ public class Main
     //                          //
     public static void breadthFirstSearch()
     {
-        Graph g = readGraphTextFile();
+        Graph graph = readGraphTextFile();
 
         System.out.println("---------------------------------------");
         System.out.println("Breadth First Search Graph:");
-        System.out.println(g);
+        System.out.println(graph);
 
         int startingVertex = 0;
         int endingVertex = 6;
 
-        BreadthFirstSearch bfs = new BreadthFirstSearch(g, startingVertex);
+        BreadthFirstSearch bfs = new BreadthFirstSearch(graph, startingVertex);
 
         if(bfs.hasPath(endingVertex))
         {

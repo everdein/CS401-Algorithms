@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9229bdd-ec1c-4f0d-9f35-377bfe767f21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Assignments/CS401 Assignment 4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data 2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/DijkstraSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/KruskalMST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/KruskalMST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphs/PrimLazy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphs/PrimLazy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KruskalMST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrimLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrimLazy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiny_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tiny_data.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +19,43 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="2835">
+              <caret line="189" column="61" selection-start-line="189" selection-start-column="61" selection-end-line="189" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+              <folding>
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GraphMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="57" selection-start-line="57" selection-end-line="65" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,12 +234,12 @@
       <workItem from="1560531213207" duration="4000" />
       <workItem from="1560712788908" duration="14000" />
       <workItem from="1560712882799" duration="1755000" />
-      <workItem from="1560908821300" duration="7116000" />
+      <workItem from="1560908821300" duration="7348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55312000" />
+    <option name="totallyTimeSpent" value="55544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="637" y="23" width="1283" height="1177" extended-state="0" />
@@ -230,7 +254,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299539" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1889401" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2248848" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -273,22 +297,6 @@
     <entry file="file://$USER_HOME$/Downloads/graphs/src/graphs/GraphMatrix.java" />
     <entry file="file://$USER_HOME$/Downloads/graphs/src/graphs/Graph.java" />
     <entry file="file://$PROJECT_DIR$/src/TopologicalOrder.java" />
-    <entry file="file://$PROJECT_DIR$/src/GraphMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BreadthFirstSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -337,21 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="171" column="16" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-          <folding>
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,10 +559,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="57" selection-start-line="57" selection-end-line="65" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="2835">
+          <caret line="189" column="61" selection-start-line="189" selection-start-column="61" selection-end-line="189" selection-end-column="61" />
         </state>
       </provider>
     </entry>
