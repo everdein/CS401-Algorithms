@@ -7,31 +7,94 @@ public class Main
 //        graph();
 //        graphMatrix();
 //        depthFirstSearch();
-        breadthFirstSearch();
+//        breadthFirstSearch();
+//        directedGraph();
 //        directedGraphAndCycle();
-//        topologicalDirectedGRaph();
+//        topologicalDirectedGraph();
 //        edgeWeightedGraph();
 //        edgeWeightedDirectedGraph();
 //        primLazy();
 //        kruskalMST();
+//        dijkstrasShortestPath();
     }
 
     //                     //
     //// Reads Text File ////
     //                     //
-    public static Graph readTxt()
+    public static Graph readGraphTextFile()
     {
         In in = new In("tiny_data.txt");
         int vertices = in.readInt();
         int edges = in.readInt();
+
         Graph graph = new Graph(vertices, edges);
+
         for(int i = 0; i < edges; i++)
         {
             int v = in.readInt();
             int w = in.readInt();
             graph.addEdge(v, w);
         }
+
         return graph;
+    }
+
+    public static DirectedGraph readDirectedGraphTextFile()
+    {
+        In in = new In("tiny_data.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+
+        DirectedGraph directedGraph = new DirectedGraph(vertices);
+
+        for(int i = 0; i < edges; i++)
+        {
+            int v = in.readInt();
+            int w = in.readInt();
+            directedGraph.addEdge(v, w);
+        }
+
+        return directedGraph;
+    }
+
+    public static EdgeWeightedGraph readEdgeWeightedGraphTextFile()
+    {
+        In in = new In("data2.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+
+        EdgeWeightedGraph edgeWeightedGraph = new EdgeWeightedGraph(vertices);
+
+        for(int i=0;i<edges;i++)
+        {
+            int v = in.readInt();
+            int w = in.readInt();
+            double weight = in.readDouble();
+            Edge edge = new Edge(v, w, weight);
+            edgeWeightedGraph.addEdge(edge);
+        }
+
+        return edgeWeightedGraph;
+    }
+
+    public static EdgeWeightedDirectedGraph readEdgeWeightedDirectedGraphTextFile()
+    {
+        In in = new In("data2.txt");
+        int vertices = in.readInt();
+        int edges = in.readInt();
+
+        EdgeWeightedDirectedGraph edgeWeightedDirectedGraph = new EdgeWeightedDirectedGraph(vertices);
+
+        for(int i=0;i<edges;i++)
+        {
+            int v = in.readInt();
+            int w = in.readInt();
+            double weight = in.readDouble();
+            DirectedEdge edge = new DirectedEdge(v, w, weight);
+            edgeWeightedDirectedGraph.addEdge(edge);
+        }
+
+        return edgeWeightedDirectedGraph;
     }
 
     //           //
@@ -39,7 +102,8 @@ public class Main
     //           //
     public static void graph()
     {
-        Graph g = readTxt();
+        Graph g = readGraphTextFile();
+
         System.out.println("---------------------------------------");
         System.out.println("Graph:\n" + g);
         System.out.println("Vertices: " + g.v());
@@ -53,17 +117,34 @@ public class Main
     //                  //
     public static void graphMatrix()
     {
-        Graph g = readTxt();
+        Graph g = readGraphTextFile();
+
         System.out.println("---------------------------------------");
         System.out.println("Graph Matrix:");
         System.out.println(g);
         System.out.print("Ajacent: " );
+
         int adjacent = 2;
+
         for(int w: g.adj(adjacent))
         {
             System.out.print(w + " ");
         }
+
         System.out.println();
+    }
+
+    //                    //
+    //// Directed Graph ////
+    //                    //
+    public static void directedGraph()
+    {
+        DirectedGraph directedGraph = readDirectedGraphTextFile();
+
+        System.out.println(directedGraph);
+        System.out.println("In Degree: " + directedGraph.inDegree(1));
+        System.out.println("Out Degree: " + directedGraph.outDegree(1));
+        System.out.println("Directed Graph Adjacent: " + directedGraph.adj(1));
     }
 
     //                        //
@@ -71,19 +152,24 @@ public class Main
     //                        //
     public static void depthFirstSearch()
     {
-        Graph g = readTxt();
+        Graph g = readGraphTextFile();
+
         System.out.println("---------------------------------------");
         System.out.println("Depth First Search Graph:");
         System.out.println(g);
+
         int startingVertex = 0;
         int endingVertex = 6;
+
         DepthFirstSearch bfs = new DepthFirstSearch(g, startingVertex);
+
         if(bfs.hasPath(endingVertex))
         {
             System.out.println("Starting Vertex: " + startingVertex);
             System.out.println("Ending Vertex: " + endingVertex);
             System.out.println("Path To: "  + bfs.pathTo(endingVertex));
         }
+
         System.out.println("Path Distance: " + bfs.distTo(endingVertex));
     }
 
@@ -92,19 +178,24 @@ public class Main
     //                          //
     public static void breadthFirstSearch()
     {
-        Graph g = readTxt();
+        Graph g = readGraphTextFile();
+
         System.out.println("---------------------------------------");
         System.out.println("Breadth First Search Graph:");
         System.out.println(g);
+
         int startingVertex = 0;
         int endingVertex = 6;
+
         BreadthFirstSearch bfs = new BreadthFirstSearch(g, startingVertex);
+
         if(bfs.hasPath(endingVertex))
         {
             System.out.println("Starting Vertex: " + startingVertex);
             System.out.println("Ending Vertex: " + endingVertex);
             System.out.println("Path To: "  + bfs.pathTo(endingVertex));
         }
+
         System.out.println("Path Distance: " + bfs.distTo(endingVertex));
     }
 
@@ -113,40 +204,33 @@ public class Main
     //                            //
     public static void directedGraphAndCycle()
     {
-        In in = new In("data.txt");
-        int vertices = in.readInt();
-        int edges = in.readInt();
-        DirectedGraph digraph = new DirectedGraph(vertices);
-        for (int i = 0; i < edges; i++) {
-            int v = in.readInt();
-            int w = in.readInt();
-            digraph.addEdge(v, w);
-        }
+        DirectedGraph directedGraph = readDirectedGraphTextFile();
+
         System.out.println("---------------------------------------");
         System.out.println("Directed and Cycle Graph:");
-        System.out.println(digraph);
-        DirectedCycle dc = new DirectedCycle(digraph);
+        System.out.println(directedGraph);
+
+        DirectedCycle dc = new DirectedCycle(directedGraph);
+
         if(dc.hasCycle())
         {
-            System.out.println("Cycle:"+ dc.cycle());
+            System.out.println("Cycle: " + dc.cycle());
         }
     }
 
     //                                //
     //// Topological Directed Graph ////
     //                                //
-    public static void topologicalDirectedGRaph()
+    public static void topologicalDirectedGraph()
     {
-        DirectedGraph digraph = new DirectedGraph(8);
-        digraph.addEdge(0,1 );
-        digraph.addEdge(1,2 );
-        digraph.addEdge(3,2 );
-        digraph.addEdge(3,4 );
 
-        DirectedCycle dc = new DirectedCycle(digraph);
-        if(!dc.hasCycle())
+        DirectedGraph directedGraph = readDirectedGraphTextFile();
+
+        DirectedCycle directedCycle = new DirectedCycle(directedGraph);
+
+        if(!directedCycle.hasCycle())
         {
-            DepthFirstOrder depthFirstOrder = new DepthFirstOrder(digraph);
+            DepthFirstOrder depthFirstOrder = new DepthFirstOrder(directedGraph);
             System.out.println(depthFirstOrder.reversePostOrder());
         }
         else
@@ -160,19 +244,9 @@ public class Main
     //                         //
     public static void edgeWeightedGraph()
     {
-        In in = new In("data.txt");
-        int vertices = in.readInt();
-        int edges = in.readInt();
-        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
-        for(int i = 0; i < edges; i++)
-        {
-            int v = in.readInt();
-            int w = in.readInt();
-            double weight = in.readDouble();
-            Edge edge = new Edge(v, w, weight);
-            graph.addEdge(edge);
-        }
-        System.out.println(graph);
+        EdgeWeightedGraph edgeWeightedGraph = readEdgeWeightedGraphTextFile();
+
+        System.out.println(edgeWeightedGraph);
     }
 
     //                                  //
@@ -180,67 +254,53 @@ public class Main
     //                                  //
     public static void edgeWeightedDirectedGraph()
     {
-        In in = new In("data.txt");
-        int vertices = in.readInt();
-        int edges = in.readInt();
-        EdgeWeightedDirectedGraph graph = new EdgeWeightedDirectedGraph(vertices);
-        for(int i = 0; i < edges; i++)
-        {
-            int v = in.readInt();
-            int w = in.readInt();
-            double weight = in.readDouble();
-            DirectedEdge directedEdge = new DirectedEdge(v, w, weight);
-            graph.addEdge(directedEdge);
-        }
-        System.out.println(graph);
+        EdgeWeightedDirectedGraph edgeWeightedDirectedGraph = readEdgeWeightedDirectedGraphTextFile();
+
+        System.out.println(edgeWeightedDirectedGraph);
     }
 
     //               //
-    //// Prim Lazy ////
+    //// Prim's Lazy ////
     //               //
     public static void primLazy()
     {
-        In in = new In("d.txt");
-        int vertices = in.readInt();
-        int edges = in.readInt();
-
-        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
-
-        for(int i=0;i<edges;i++) {
-            int v = in.readInt();
-            int w = in.readInt();
-            double weight = in.readDouble();
-            Edge edge = new Edge(v, w, weight);
-            graph.addEdge(edge);
-        }
+        EdgeWeightedGraph edgeWeightedGraph = readEdgeWeightedGraphTextFile();
 
 
-        PrimLazy prim = new PrimLazy(graph);
+        PrimLazy prim = new PrimLazy(edgeWeightedGraph);
+
+        System.out.println(edgeWeightedGraph);
         System.out.println(prim.weight());
         System.out.println(prim.mst());
     }
 
-    //                 //
-    //// Kruskal MST ////
-    //                 //
+    //                                     //
+    //// Kruskal's Minimum Spanning Tree ////
+    //                                     //
     public static void kruskalMST()
     {
-        In in = new In("data.txt");
-        int vertices = in.readInt();
-        int edges = in.readInt();
+        EdgeWeightedGraph edgeWeightedGraph = readEdgeWeightedGraphTextFile();
 
-        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
+        KruskalMST prim = new KruskalMST(edgeWeightedGraph);
 
-        for(int i=0;i<edges;i++) {
-            int v = in.readInt();
-            int w = in.readInt();
-            double weight = in.readDouble();
-            Edge edge = new Edge(v, w, weight);
-            graph.addEdge(edge);
-        }
-
-        KruskalMST prim = new KruskalMST(graph);
+        System.out.println(edgeWeightedGraph);
         System.out.println(prim.weight());
         System.out.println(prim.mst());
+    }
+
+    //                              //
+    //// Dijkstra's Shortest Path ////
+    //                              //
+    public static void dijkstrasShortestPath()
+    {
+
+        EdgeWeightedDirectedGraph edgeWeightedDirectedGraph = readEdgeWeightedDirectedGraphTextFile();
+
+        DijkstraShortestPath dijkstraShortestPath = new DijkstraShortestPath(edgeWeightedDirectedGraph, 0);
+
+        System.out.println(edgeWeightedDirectedGraph);
+        System.out.println(dijkstraShortestPath.distTo(1));
+        System.out.println(dijkstraShortestPath.hasPathTo(1));
+        System.out.println(dijkstraShortestPath.pathTo(1));
     }
 }

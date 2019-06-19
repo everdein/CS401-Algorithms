@@ -1,6 +1,7 @@
 import edu.princeton.cs.algs4.Bag;
 
-public class DirectedGraph {
+public class DirectedGraph
+{
     private int v;
     private int e;
     private Bag<Integer>[] adj;
@@ -13,7 +14,7 @@ public class DirectedGraph {
         inDegree = new int[v];
         for (int i = 0; i < v; i++)
         {
-            adj[i] = new Bag<Integer>();
+            adj[i] = new Bag<>();
         }
         e = 0;
     }
