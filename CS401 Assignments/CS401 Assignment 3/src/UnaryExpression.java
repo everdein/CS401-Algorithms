@@ -1,3 +1,9 @@
+//              :   General Layout:
+//              :   Query (interface) -> And, Or, Not, UnaryExpression
+//              :       -execute, getField
+//              :   UnaryExpression (abstract) -> Equal, GT, GTE, LT, LTE, NotEqual
+//              :       -execute, field, value, getField
+
 public abstract class UnaryExpression<T extends Comparable<T>> implements Query<T> {
 
     protected String field;

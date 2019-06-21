@@ -1,3 +1,9 @@
+//              :   General Layout:
+//              :   Query (interface) -> And, Or, Not, UnaryExpression
+//              :       -execute, getField
+//              :   UnaryExpression (abstract) -> Equal, GT, GTE, LT, LTE, NotEqual
+//              :       -execute, field, value, getField
+
 import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.HashSet;
 import java.util.Map;
@@ -25,6 +31,7 @@ public class LTE<T extends Comparable<T>> extends UnaryExpression<T> {
         return temp;
     }
 
+    // returns field from super class UnaryExpression
     @Override
     public String getField() {
         return field;

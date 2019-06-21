@@ -1,3 +1,4 @@
+// gets and sets all fields of each movie
 public class Movie<T extends Comparable<T>> {
     private int id;
     private T color;

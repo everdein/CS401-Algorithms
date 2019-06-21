@@ -144,7 +144,7 @@ public class Main
         System.out.println(directedGraph);
         System.out.println("In Degree: " + directedGraph.inDegree(1));
         System.out.println("Out Degree: " + directedGraph.outDegree(1));
-        System.out.println("Directed Graph Adjacent: " + directedGraph.adj(1));
+        System.out.println("Directed Graph Adjacent: " + directedGraph.adj(1)); // Only prints references.
     }
 
     //                        //

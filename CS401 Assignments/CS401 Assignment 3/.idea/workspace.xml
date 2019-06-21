@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26ab4d82-8d33-40f5-bb96-8d92cbb690c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/DijkstraShortestPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/And.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GTE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GTE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LTE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LTE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoviesDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoviesDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Not.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Not.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NotEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Or.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Or.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnaryExpression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS401 Assignment 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 4/out/production/CS401 Assignment 4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 4/out/production/CS401 Assignment 4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS401 Assignment 4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CS401 Assignment 4/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/DirectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/DirectedGraph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/PrimLazy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/out/production/Graphs/PrimLazy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/DijkstraSP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/KruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/KruskalMST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/DirectedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/PrimLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS401 Exercises/Graphs/src/PrimLazy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,96 +49,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/And.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1418#1419#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Query.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UnaryExpression.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Or.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#261#268#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NotEqual.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MoviesDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Not.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="540">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
               <folding>
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#0#16370#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LTE.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LT.java">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -208,9 +135,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="637" />
+    <option name="x" value="633" />
     <option name="y" value="23" />
-    <option name="width" value="1283" />
+    <option name="width" value="1287" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -221,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -238,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,17 +235,18 @@
       <workItem from="1559344470622" duration="382000" />
       <workItem from="1559680128213" duration="1221000" />
       <workItem from="1560621759625" duration="39000" />
+      <workItem from="1561136130464" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87598000" />
+    <option name="totallyTimeSpent" value="87752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="637" y="23" width="1283" height="1177" extended-state="0" />
+    <frame x="633" y="23" width="1287" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22240129" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2248996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -430,6 +358,28 @@
     <entry file="file://$PROJECT_DIR$/src/GTE.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/And.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UnaryExpression.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -480,29 +430,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MoviesDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="540">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding>
+            <element signature="e#0#16370#0" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
           </folding>
         </state>
       </provider>

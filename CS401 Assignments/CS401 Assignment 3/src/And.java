@@ -1,3 +1,9 @@
+//              :   General Layout:
+//              :   Query (interface) -> And, Or, Not, UnaryExpression
+//              :       -execute, getField
+//              :   UnaryExpression (abstract) -> Equal, GT, GTE, LT, LTE, NotEqual
+//              :       -execute, field, value, getField
+
 import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.*;
 
@@ -6,6 +12,7 @@ public class And<T extends Comparable<T>> implements Query<T> {
     private ArrayList<Query> queries = new ArrayList<Query>();
     private ArrayList<HashSet<Integer>> hashSets = new ArrayList<>();
 
+    // stores an arrayList of queries
     public And(Query... queries) {
         this.queries = new ArrayList<Query>();
         this.queries.addAll(Arrays.asList(queries));

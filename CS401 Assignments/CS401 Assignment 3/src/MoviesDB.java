@@ -21,6 +21,7 @@
 //              :   UnaryExpression (abstract) -> Equal, GT, GTE, LT, LTE, NotEqual
 //              :       -execute, field, value, getField
 
+
 import edu.princeton.cs.algs4.RedBlackBST;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -55,17 +56,19 @@ public class MoviesDB<T extends Comparable<T>> {
         HashSet<Integer> result = (HashSet<Integer>) query.execute(movieDB.getIndexTreeMap());
 
         // prints results
-        Iterator<Integer> idIterator = result.iterator();
-        int i = 0;
-        while(idIterator.hasNext()) {
-            int id = idIterator.next();
-            movieDB.print(id);
-            i++;
+        if(result != null) {
+            Iterator<Integer> idIterator = result.iterator();
+            int i = 0;
+            while(idIterator.hasNext()) {
+                int id = idIterator.next();
+                movieDB.print(id);
+                i++;
+            }
+            System.out.println("\nTotal Number of Results: " + i);
         }
-
-        System.out.println("\nTotal Number of Results: " + i);
     }
 
+    // prints all the information of a movie pertaining to the given ID
     public void print(int id) {
         System.out.println("============================================");
         System.out.println("id: " + db[id-1].getId());
@@ -85,6 +88,10 @@ public class MoviesDB<T extends Comparable<T>> {
 
     }
 
+    // loads the file and its contents. Some data is off, so Regex is utilized or the data is casted.
+    // An int, lineCount, is used to iterate through the data easily. This makes the code
+    // more expandable. If more columns were added or removed we could simply comment the line out
+    // that pertains to it, or add a line to represent the new column.
     public MoviesDB(String filename) {
         String line;
         String[] categories;
@@ -158,8 +165,7 @@ public class MoviesDB<T extends Comparable<T>> {
     // finds the number of lines in the file
     private static int getLineCount(String fileName) {
         int lineCount = 0;
-        try (Scanner scanner = new Scanner(new File(fileName)))
-        {
+        try (Scanner scanner = new Scanner(new File(fileName))) {
             scanner.nextLine();
             while (scanner.hasNextLine()) {
                 scanner.nextLine();

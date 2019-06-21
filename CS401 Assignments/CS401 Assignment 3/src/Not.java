@@ -1,3 +1,9 @@
+//              :   General Layout:
+//              :   Query (interface) -> And, Or, Not, UnaryExpression
+//              :       -execute, getField
+//              :   UnaryExpression (abstract) -> Equal, GT, GTE, LT, LTE, NotEqual
+//              :       -execute, field, value, getField
+
 import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.HashSet;
 import java.util.Map;

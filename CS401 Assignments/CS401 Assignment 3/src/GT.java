@@ -1,3 +1,9 @@
+//              :   General Layout:
+//              :   Query (interface) -> And, Or, Not, UnaryExpression
+//              :       -execute, getField
+//              :   UnaryExpression (abstract) -> Equal, GT, GTE, LT, LTE, NotEqual
+//              :       -execute, field, value, getField
+
 import edu.princeton.cs.algs4.RedBlackBST;
 import java.util.HashSet;
 import java.util.Map;
@@ -16,7 +22,7 @@ public class GT<T extends Comparable<T>> extends UnaryExpression<T> {
 
         HashSet<Integer> temp = new HashSet<>();
 
-        // if compareTo is greater than, then you
+        // if compareTo is greater than, then add all values from RBT.get(s)
         for (T s: RBT.keys()) {
             if(s.compareTo(value) > 0) {
                 temp.addAll(RBT.get(s));
@@ -29,6 +35,7 @@ public class GT<T extends Comparable<T>> extends UnaryExpression<T> {
         return temp;
     }
 
+    // returns field from super class UnaryExpression
     @Override
     public String getField() {
         return field;
